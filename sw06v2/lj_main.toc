@@ -1,0 +1,61 @@
+\contentsline {prefacesection}{List of Figures}{vii}{chapter*.3}
+\contentsline {prefacesection}{Abstract}{xiii}{chapter*.4}
+\contentsline {chapter}{\numberline {1}Introduction }{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduce the problem (acoustic propagation in a IW environment)}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Solitons in ocean}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Acoustical effects of solitons}{3}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Outline of Thesis}{4}{section.1.2}
+\contentsline {chapter}{\numberline {2}Theory of shallow water waveguide and computer models}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Linear Wave Equation and Helmholtz Equation}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}Normal Modes}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Normal Modes for Range-Independent Environments }{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Normal Modes for Range-dependent Environments }{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Normal Modes for 3-D Environments}{10}{subsection.2.2.3}
+\contentsline {subsubsection}{Horizontal Refraction Equation}{10}{section*.5}
+\contentsline {subsection}{\numberline {2.2.4}Mode Filtering}{12}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Parabolic Equation}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Split-Step Fourier Transform Method}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Standard and Wide Angle Approximation}{17}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}A Brief introduction to Nonlinear Internal Waves (Soliton)}{19}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Reconstruction of 3D IW environment }{19}{subsection.2.4.1}
+\contentsline {subsubsection}{The leading front of internal wave maintains a straight line}{20}{section*.6}
+\contentsline {subsubsection}{Waveform changes only slightly along fronts}{20}{section*.7}
+\contentsline {subsubsection}{Constant internal wave speed and direction}{21}{section*.8}
+\contentsline {subsection}{\numberline {2.4.2}Water temperature extrapolation}{21}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Reconstruct a 3D temperature field}{22}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Shallow Water 2006 Experiment}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Experiment site and environment moorings}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}Acoustic moorings}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Sources}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Receiver array}{25}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Internal wave observation}{26}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Internal wave event 50}{27}{subsection.3.3.1}
+\contentsline {chapter}{\numberline {4}Acoustic Observations in Event 50}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Transmission from the fixed source(NRL 300Hz)}{36}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Phase I: 20:30-20:37GMT \& 21:00-21:07GMT}{36}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Phase II: 21:30-21:37GMT}{37}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Phase III: 22:00-22:07GMT, 22:30-22:37GMT, 23:00-23:07GMT \& 23:30-23:37GMT}{37}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Phase IV: after 23:30GMT}{38}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}23:00GMT-23:07GMT}{38}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}23:30GMT-23:37GMT}{38}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}Transmissions from mobile source (R/V Sharp)}{62}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}21:11GMT-21:27GMT}{62}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}21:41GMT-21:57GMT}{62}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}22:11GMT-22:27GMT}{62}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}22:41GMT-22:57GMT}{62}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}23:11GMT-23:27GMT}{63}{subsection.4.2.5}
+\contentsline {chapter}{\numberline {5}Analysis and modeling}{77}{chapter.5}
+\contentsline {section}{\numberline {5.1} Intensity fluctuation and statistics}{77}{section.5.1}
+\contentsline {section}{\numberline {5.2}Acoustic signal coherence time and length}{79}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Fixed source}{79}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Moving source}{80}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Behavior of horizontal ray beams}{80}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Horizontal Ray}{80}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Horizontal beamforming}{80}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Single mode propagation}{80}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Mode coupling}{80}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Horizontal Lloyd's mirror effect}{80}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Two-dimensional case}{80}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Three-dimensional case}{82}{subsection.5.4.2}
+\contentsline {chapter}{\numberline {6}Summary}{93}{chapter.6}
+\contentsline {chapter}{\uppercase {Bibliography}}{95}{chapter*.10}

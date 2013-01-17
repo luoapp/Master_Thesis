@@ -1,0 +1,128 @@
+
+\chapter{Data Analysis}
+
+\section{Oceanographic Data}
+\subsection{Temperature and Isotherm}
+The water column temperature time series made by the network of
+thermistor strings (Fig. EXP-1) during  the experiment provide a
+detailed overview of the dominant oceanographic features, in space,
+time and frequency domains.
+
+The 26 deg. C. isotherm highlighted in Fig. EXP-4, roughly corresponds to the bottom of the mixed layer and the top of the thermocline, for all the temperature time series. Its mean depth is approximately 50m for all moorings, though deeper moorings showed a small trend for a deeper thermocline. The observed oscillations of the 26 deg. C. isotherm have similar mean amplitudes, of about 25m at all moorings, likely as a consequence of the interaction of the strong bathymetric slope (7%) and roughly 0.2m/s tidal currents (EXP.5). The barotropic tide estimated in the area shows two consecutive regimes: a spring phase with a strong diurnal tide between 0.3 and 0.4cm elevation during the first 4 days of the experiment, and a less energetic period, as approaching the neap tides, with a smaller diurnal inequality, and 0.1 to 0.2 cm elevations. Observed oscilations at the shelf along the 100m isobath, have mean periods agreeing with diurnal tidal forcing, although phase lags cannot be directly related to linear internal wave dynamics. The observed delay between observed isotherm oscillations and the barotropic forcing can be explained by the geometry of the island shelf and the characteristics of the tidal currents around the island. Although the tidal flux is mostly along bathymetry (North-West - South-East), the cyclic rotation of the tidal current has a stronger internal waves generating potential when the direction of the current is aligned with the steepest bathymetric slope (e.g. Baines, 1982).
+Since all moorings along the 100m isobath show synchronized
+isotherms, the geometry of the internal waves propagating above the
+shelf can be assumed to have a plane wave structure, with a front
+aligned with bathymetry. Nevertheless, the cross correlation between
+isotherm 26 deg. C. using a moving window of length 26 hours (Fig.
+EXP-5) gives prominence to the plane wave structure during the
+spring tides. The right-hand plot of Fig. EXP-6 shows TS8 having
+5.62 hours lead over TS3. Since the distance between TS8 and TS3 is
+720m and linear internal wave theory would estimate phase speeds of
+roughly 3.5m/s, it suggest this simplified theory cannot fully
+describe these dynamics. Furthermore, non-linear characteristics are
+evident on the time variant, energy exchange among frequency bands,
+as displayed in the spectrograms of TS3 and TS8 (Fig. EXP-6)
+interface displacements. The 8 hours harmonic, more energetic at the
+slope TS8 mooring, suggests wave-wave interactions triggering higher
+harmonics and spreading energy towards higher frequencies and
+smaller wavelengths, justifying the observed phase lag.
+
+The diurnal energy (K1) is stable at all moorings, while
+semi-diurnal energy (M2) is more noticeable the first days of the
+experiment, though it persists at the slope mooring during all the
+spring tides. The 8 hours harmonic is intermittently present at all
+moorings, though more frequent at the slope. Higher harmonics appear
+to be stronger during highest diurnal tide at the slope, which
+corresponds at maximum forced interface displacements. Higher
+harmonics could also be seen, though they are filtered in these
+spectrograms.
+
+This analysis of water column temperature dynamics based on fixed
+moorings data shows that tidal dynamics in this area have a high
+potential to affect underwater acoustics, within small ranges and
+different time frames that go from 24 to 4 hours, probably even
+less. Strong thermocline variability within length scales between 2
+and 10 km can be expected at the slope, predominantly near the
+highest diurnal tide, during spring tides.
+
+\subsection{Wind speed and Surface wave}
+
+\subsection{Current}
+
+\section{Acoustic Data}
+Standard matched filter processing was used to extract the amplitude
+envelope of channel impulse response function. A flatten filter
+$G(t)$ was also applied to remove the overall effect of instruments
+at both transmitter and receiver side.
+\begin{equation}
+y(t)=R(t)\otimes G(t)\otimes L(t)\label{eq1}
+\end{equation}
+To get the energy for individual group, $y(t)$ passes through a
+Hilbert filter to recover the complex signal, then integrated over
+the time duration of one particular group.
+
+\begin{equation}E_i=\int_ {t1_i}^{t2_i} | Hilb(y(t)) +
+y(t)|^2\label{eq2} dt\end{equation}
+
+Where, $t1_i$ and $t2_i$ are the start and end time of the $i-th$
+arrival group, $Hilb(*)$ is the Hilbert transform, and $E_i$ is the
+energy of the $i-th$ arrival group.
+
+Because $y(t)$ is actually the real impulse response function $I(t)$
+convolved with the auto-correlation function of LFM signal, it
+inevitably includes the sidelobe component of the auto correlation
+function. Nevertheless, since the system we considering here is
+assumed linear and the energy is what we are interested, $y(t)$ and
+$I(t)$ are the same up to a constant coefficient, as long as the
+individual groups can be separated clearly in time domain as we will
+shown with experimental data. From this point on, we will use $y(t)$
+as real impulse response function.
+
+During Kauai experiment, each of 20 second transmission is called a
+packet. In one packet, there were about 60 pings of LFM signal.
+Overall, 37 packets were transmitted. The received acoustic data can
+be divided into seven groups based on the arrival delay and the
+number of interaction with boundaries.
+
+\begin{table}[h]
+\caption{arrival groups of impulse response function}\label{tab-1}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+group&interaction  with  boundaries\\
+\hline
+0&no (noise)\\
+\hline
+1&no (direct)\\
+\hline
+2&B\\
+\hline
+3&S \& B-S\\
+\hline
+4&S-B \& B-S-B \\
+\hline
+5&S-B-S \& B-S-B-S\\
+\hline
+6& later arrivals \\
+\hline \multicolumn{2}{|l|}{B:bottom interaction; S:surface
+interaction}\\
+ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+
+
+The energy of group is defined as $ E_q^{g_i}(n,k)$, with $q$,
+$g_i$, $n$, and $k$ for the index of channel, group, packet, and
+transmission in one packet. The average group energy is defined as
+
+\begin{equation} \bar E_q^{g_i}(n,k) =\frac{1}{k} \sum _{k=1}^K
+E_q^{g_i}(n,k)
+\end{equation}
+
+\subsection{Transducer}
+\subsection{Receiver Arrays}
+\subsubsection{APL array}
+\subsubsection{MPL array}
+\subsubsection{UDel arrays}

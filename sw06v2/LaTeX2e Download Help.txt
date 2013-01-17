@@ -1,0 +1,20 @@
+
+FILES:
+
+LaTeX2e Download Help -> this file
+
+examples folder -> example files for UDThesis
+
+latex2eudt.tex -> LaTeX2e UDThesis documentation**
+latex2eudt.pdf -> LaTeX2e UDThesis documentation view
+latex2eudt.ps  -> LaTeX2e UDThesis documentation print
+
+seniorthesis.clo - > LaTeX2e UDThesis optional class file for senior thesis
+
+udthesis.cls -> LaTeX2e UDThesis class file
+
+
+** LaTeX2e UDThesis documentation source, you will need to use 
+your local LaTeXe system to typeset and view the documentation.
+Otherwise just view latex2eudt.pdf or print latex2eudt.ps
+

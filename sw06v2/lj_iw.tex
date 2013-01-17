@@ -1,0 +1,65 @@
+\section{A Brief introduction to Nonlinear Internal Waves (Soliton)}
+
+
+\subsection{Reconstruction of 3D IW environment }
+A detailed, accurate 3D environment is critical in order to model the acoustic propagation in the area, and for a better understanding of the acoustical phenomena occurred during the experiment. However, limited by the equipment and experiment conditions, environmental data usually can only be gathered at sparse mooring points (relative to the massive water body). Next, we explain how we reconstruct the 3D environment (mainly temperature) data from various sources and sensors for event 50 during SW06 experiment. 
+\subsubsection{The leading front of internal wave maintains a straight line}
+Figure 2 shows the combined radar picture of IW at 21:30GMT and 22:00GMT from R/V Oceanus and R/V Sharp with sketched leading wave fronts (red dash line). While the internal wave fronts in general maintain relatively straight across the range (~10km), it does demonstrate some curved features under close exam. It's also worth noting that within the range of R/V Oceanus's radar (lower one), and the upper half of R/V Sharp's Radar, the wave fronts are indeed pretty straight, which leads us to believe a 3-segmented line could be a better approximation for a more accurate model without too much manual sketch.
+Under this assumption, the interpolation on the x-y plane is done on the direction parallel to the IW fronts, i.e., perpendicular to the direction of wave propagation. 
+
+\subsubsection{Waveform changes only slightly along fronts}
+
+Figure \ref{fig:tfarm_dir} shows the temperature records during one internal wave event (Event 50) by 8 thermistor arrays in the farm and one attached to the WHOI receiver array (VHLA). Panel (a) is the arrays roughly perpendicular to the direction of the internal wave propagating (edge "a"), panel (b) is the arrays along the propagation direction (edge "b"). (Fig. \ref{fig:tfarm}) WHOI VHLA is added as a reference. 
+
+Using the temperature at 30m as an indicator of the IW waveform, Fig \ref{fig:tfarm_dir} shows the  evolutions of IW waveform at two directions at the location close to the acoustic track. The lag is adjusted by aligning the edge of the data. We find the first two or three IW waves are quite stable on Edge ÒaÓ. Starting from wave number 4, there can have wave dissipation or wave merge. Notice the small wave inside the circle on "a" disappears after Shark VLA (SW54), or it can merge with another wave, they both are equally plausible. There are more visible variations along Edge "b" than on Edge "a". Since our interpolation/extrapolation is done on the direction of IW wave front, we expect it will match the real environment reasonably well.
+
+
+\subsubsection{Constant internal wave speed and direction}
+
+The speed and direction of the leading IW front are estimated from temperature sensor data as well as the measurements from radar images. Speed and direction are optimized with the MMSE (minimum mean square error) criteria. Consider the size of the T-farm, it is not as "local" as the other two estimation. Nevertheless, all three estimations show very similar results, and again confirmed by the radar observations. The consistence implies when the IW is passing the Shark-SW32 acoustic track, the wave package as a whole is stable in terms of both shape and moving velocity.
+
+\begin{table*}[hc]
+\caption{ Local velocity and direction of internal waves in event 50
+\label{tab-iw_vel}}
+\begin{center} 
+\begin{tabular}{ | c| c | c |c|}
+\hline \hline
+
+Location&Moorings        & IW front direction & IW speed (m/min)      \\
+
+                 \hline \hline
+ Shark VLA & 54,14,15,16,17 & 38.3022& 55.6164\\
+ \hline
+ T-farm & 4-17, 30, 31 & 36.8208 & 53.6021\\
+ \hline
+ Madway  & 32,19,20&39.5210&57.6753\\
+ \hline
+ R/V Sharp Radar&&$\sim$40&57.5653\\
+ \hline
+ R/V Oceanus Radar&&$\sim$40&55.1065\\
+ \hline
+ \hline
+\end{tabular} 
+\end{center}
+\end{table*}
+
+\subsection{Water temperature extrapolation}
+The water temperature data are collected by the thermistor string moorings at SW54 and SW32. Unfortunately, the surface sensor on SW32 lost during the experiment, and the next one is located at 15 meter down, thus some form of temperature extrapolation is necessary. 15 meter is the up bound of the fast-changing thermocline layer, which causes linear extrapolation to give unrealistic results Ð water temperature can be as hot as $40^\circ C$ at surface. Help comes from a single pressure-temperature sensor attached to the transducer J15. 
+
+On Aug. 17th and 18th, J15 were deployed and recovered twice, during which the TD sensor generated 4 temperature profiles shown in Fig. \ref{fig:water_temp4}. The top layer of water is very well mixed, and the depth of it is about 15m. The highest water temperature is about 25C. Based on this observation, the water temperature extrapolation/interpolation is performed for depth $>$15m, for the water above 15m, we assume the it is well mixed, thus use the temperature measured at the top sensor(15m).
+
+\subsection{Reconstruct a 3D temperature field}
+Based on the estimated IW speed and direction, we can reconstruct a 3D temperature field. Figure 6 shows the reconstructed temperature field at various depths. The field is plotted in a new coordinate system. Imaging a coordinate system travel with the internal wave package, the y-axis is the vector from SW54 to SW32, and the direction of x-axis perpendicular to y-axis, and its length is the distance the IW traveled since 19:30, Aug 17th. A sketch of this coordinate system and its position relative to Earth system at 21:30 is draw in figure 1. The gray box in the middle is the area we try to reconstruct, and a few red lines represent the internal wave front.
+
+The temperature fields at different depths are shown in Fig. 6. The track of Shark VLA during m1 ~ m5 transmission periods in the new system is marked as white lines at the bottom, SW32's as black and R/V Sharp's as blue. With different IW speed and direction, different temperature field can be constructed. The mean estimated IW speed ( 54.4293 m/min) and direction (51.0884 degree w.r.t. North) were used in figure 6. 
+
+\subsection{Verification against J15 TD sensor data}
+To verify the reconstructed temperature data, we can take a measurement with J15 at the reconstructed field. Assuming J15 is co-located with to R/V Sharp, we use J15 depth data and R/V Sharp GPS data. We also adjust the direction of IW, trying to find the best match. The results plotted below:
+
+The IW directions used in 4 plots are 51.0884 (mean), 53, 54 and 55. It will be too high expectation to achieve a perfect match between simulation and estimation. Instead, we focus on several major features, namely feature 1, 2, 3 and 4. For feature 3, instead of seeing it as a bunch of spikes, we treat it as one big peak. In this way, the best match is either when IW direction equals 53 or 54, or somewhere in between. 
+
+Two research vessels (R/V Sharp and R/V Oceanus) were following the internal wave during event 50. Radar images were being captured at the interval of 30sec. We lay the radar image on top of reconstructed temperature field to check how well these two matches. Figure \ref{fig: 3D_interp_radar} shows the reconstructed temperature field (depth = 30m) with radar image overlay before the internal wave arrived at the receiver (GMT21:11), the leading front arrived at the receiver array (GMT21:41) and after 3 wave fronts passed the acoustic track (GMT22:11). The gray half circle is the track of R/V Sharp, of which the radius is about 10km. Because of the position of R/V Oceanus, only a very small part of its radar covered the acoustic track (the lower left radar).
+
+
+
+

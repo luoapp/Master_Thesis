@@ -1,0 +1,46 @@
+%
+% This is your main file (main.tex)
+%
+
+%%%HOW TO SOLVE "too many unprocessed float latex" error
+% put \clearpage before the error-inducing figure
+
+
+\documentclass[twoside,openright] {udthesis}
+\usepackage{graphicx}
+\graphicspath{{./figure/mode/}{./figure/jasael/}
+   {./figure/experiment/}{./figure/radar/}{./figure/shark/}{./figure/theory/}{./figure/pe/}{./figure/pe/mode/}{./figure/pe/mode_coupling/}{figure/beamforming/}{figure/coherence/}}
+\usepackage{lscape}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{subfigure}
+%\usepackage{float}
+% preamble
+\begin{document}
+\setcounter{secnumdepth}{2}
+
+\newcommand {\mc}{\multicolumn}
+\newcommand {\mr}{\multirow}
+
+
+\include{lj_tap-dissertation}
+\include{lj_intro}
+\include{lj_intro_fig}
+
+
+\include{lj_theory}
+%\include{lj_theory_fig}
+
+\include{lj_ocean}
+\include{lj_ocean_fig}
+%%%\include{lj_iw}
+\include{lj_sw06_ev50_1}
+\include{lj_sw06_ev50_1_fig}
+\include{lj_sw06_ev50_2}
+\include{lj_sw06_ev50_2_fig}
+\include{lj_analysis}
+\include{lj_analysis_fig}
+\include{lj_conclusion}
+\include{lj_ref}      % This file (ref.tex) contains the text for your references.
+%\include{lj_thesis_fig}
+\end{document}

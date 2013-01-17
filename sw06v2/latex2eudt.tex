@@ -1,0 +1,1650 @@
+%\documentstyle [12pt] {newudthesis}
+%\documentstyle [11pt] {newudthesis}
+%\documentstyle [10pt] {newudthesis}
+\documentclass {udthesis}
+\gdef\firstchap{1}
+%\nofiles
+\parskip 5.5pt
+\voffset -.25truein
+\newcommand{\lbar}{\hbox to \hsize{\hrulefill}}
+\textwidth 6.25truein
+\textheight 9in
+\oddsidemargin 0truein 
+\newcommand{\BIBTeX}{B{\sc ib}\TeX}
+\newcommand{\boxit}[1]{\vbox{\hrule\hbox{\vrule\kern3pt
+	\vbox{\kern3pt#1\kern3pt}\kern3pt\vrule}\hrule}}
+\def\sm{\$\$}
+\def\til{\tt \char'176}
+\catcode`\!=\active
+	\def!#1!{{\tt \char'134 #1}}		% Use !cs! for \tt\cs
+\def\uncatcodespecials{\def\do##1{\catcode`##1=12 }\dospecials}
+\def\setupverbatim{\tt \def\par{\leavevmode\endgraf} \catcode`\`=\active
+				   \obeylines \uncatcodespecials \obeyspaces 
+                   \parskip 0pt\normalbaselines\baselineskip=12pt}
+{\obeyspaces\global\let =\ }
+{\catcode`\`=\active \gdef`{\relax\lq}}
+\def\bverbatim{\begingroup\setupverbatim\doverbatim}
+\def\doverbatim#1{\def\next##1#1{##1\endgroup}\next}
+
+\makeatletter
+\def\@verbatim{\setupverbatim}
+\makeatother
+
+\def\sskip{\vskip 3pt plus 1pt  minus 1pt}
+\def\mskip{\vskip 6pt plus 2pt  minus 2pt}
+\def\bskip{\vskip 12pt plus 4pt  minus 4pt}
+
+\makeatletter
+\renewenvironment{thereferences}{\begin{center}\bf REFERENCES\end{center}
+ \begingroup
+ \clubpenalty=10000
+ \widowpenalty=10000
+ \def\baselinestretch{1}\large\normalsize 
+ \parindent 0pt
+ \everypar{\hangindent3em}}%
+{\endgroup}
+
+\def\l@chapter#1#2{\pagebreak[3] 
+ \@tempdima 1.5em 
+ \let\previouslevel=\currentlevel
+ \let\currentlevel=0
+ \vspace*{\baselineskip}
+ \begingroup
+ \parindent \z@
+ \parfillskip -\@pnumwidth 
+ \if\firstchap0{\bf Chapter}\\
+ \vspace*{\baselineskip}\gdef\firstchap{1}%
+	\else\relax\fi
+ \hangindent\@tempdima
+ \leavevmode
+ {\uppercase{\bf #1}}\nobreak\leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern
+ \@dotsep mu$}\hfill \nobreak \hbox to\@pnumwidth{\bf\hfil #2}\par
+ \endgroup}
+
+\def\endnotes#1{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+ \fi\section*{#1}%\addcontentsline{toc}{section}{#1}
+ \vspace*{\baselineskip}
+ \immediate\write\loe{\noexpand\end{enumerate}}
+ \immediate\closeout\loe 
+ \begingroup\let\linebreak=\space\parskip=0pt
+ \def\baselinestretch{1}\large\normalsize 
+%\def\labelenumi{$^{\arabic{enumi}}$}
+ \input\jobname.loe\relax\endgroup\initloe
+ \@addtoreset{footnote}{chapter} 
+ \if@restonecol\twocolumn\fi}
+
+%\def\l@section{\relax}
+%\def\l@subsection{\relax}
+
+\makeatother
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\chapter*{University of Delaware\\
+          Information Technologies\\ 
+          User Services}
+
+\centerline {\large\bf The \LaTeX 2e UDThesis Format}
+\vspace{.5in}
+
+\noindent {\bf Publication Date}:  {June 11, 1997}
+\vspace{.5in}
+
+
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+\noindent The \LaTeX\ UDThesis format is a document type designed to
+format theses and dissertations according to the regulations specified
+by the University of Delaware Office of Graduate Studies.  It provides
+the correct margin width (with a bit to spare so that photocopying at
+98\% doesn't cause the margins to be incorrect), as well as the proper
+heading and page number placement.  \LaTeX\ UDThesis also includes
+commands for automatic formatting of the title and approval page of
+your document and the facility to cite bibliographic references from
+your own list or from a separate database.
+
+\noindent {\bf Note: }It is the student's responsibility to make sure
+that the formatted document meets the requirements specified by the
+Office of Graduate Studies' Thesis and Dissertation Manual 1995--1996, 
+available in the Manuals
+section at the University of Delaware Bookstore.
+
+
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\newpage
+
+\section*{Additional Documentation}\label{adddoc}
+\addcontentsline{toc}{section}{Additional Documentation}
+\begin{itemize}\renewcommand{\baselinestretch}{1}\large\normalsize
+
+\item \LaTeX: {\it A Document Preparation System} by Leslie
+Lamport (Updated for \LaTeX 2e)---May be 
+purchased at the University Bookstore upstairs in the
+	  ``Computer'' section.
+
+\end{itemize}
+
+\section*{Support}
+\addcontentsline{toc}{section}{Support}
+
+\noindent Consultants are generally unfamiliar with this package and
+can only help you
+interpret the documentation.  Specialized consulting is available.  If
+necessary, you will be referred to a specialist through the Consulting Room.
+Problems with the software should be reported to the Consulting Room.
+
+\section*{Conventions Used in This Document}
+\addcontentsline{toc}{section}{Conventions Used in This Document}
+
+\noindent Before you try to follow any of the directions in this document, you
+will need to familiarize yourself with the 
+conventions used in it.
+
+The examples (set off by bars) show you how to type specific commands.
+If the example uses braces \{\}, you are to type the braces.  Optional
+parts of commands are set off by brackets [~].  If you use an option in
+a command, you must type the brackets too.  Italicized words indicate
+material that you must supply (a filename, for example).  Comments that
+explain commands are set off by \% signs.  Anything that follows a \%
+on the same line will not print.
+
+\vspace*{\baselineskip}
+\begin{sloppypar}
+\boxit{\baselineskip14pt\copyright 1997 University of Delaware. 
+Permission to copy without fee
+all or part of this material is granted provided that the copies are not made
+or distributed for direct commercial advantage and that the material
+duplicated is attributed to Information Technologies User Services, University of
+Delaware.  To copy otherwise or to republish requires specific permission
+and/or a fee.
+\vspace*{12pt}}
+\end{sloppypar}
+
+\newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\chapter*{Typical Manuscript File Organization}
+\addcontentsline{toc}{chapter}{Typical Manuscript File Organization}
+
+\noindent To produce a large document, use three types of files:
+
+\begin{itemize}\itemsep0pt\parskip0pt\itemindent6em
+\item main manuscript file
+\item style file
+\item front material, chapter, and appendix files
+\end{itemize}
+
+It is generally most convenient to put each chapter or appendix
+into a separate file. These files must each have an 
+extension of {\bf .tex}.
+To include the text of the
+files in the correct place in the completed document, 
+type !include! or !input! (see {\bf Running One Chapter at a Time} for
+an explanation of the differences) followed by the filename
+enclosed in \{\} in the main manuscript file.  
+When you include the files in the main manuscript
+file, use only the
+filename without the {\bf .tex} extension. 
+For example, to include the file for chapter 1 
+(which you have called {\bf chapter1.tex}),
+you would type
+
+\mskip
+!include!\{chapter1\}
+\mskip
+
+\noindent The {\bf main mainuscript file} should be organized in this manner:
+
+\vspace*{\baselineskip}
+
+{\baselineskip 12pt
+\moveright\parindent\hbox{\vbox{
+\hbox{!documentclass! \{udthesis\}}
+\hbox{!begin! \{document\}}
+\hbox{!include!\{{\it filename for title and approval page, abstract, etc.}\}}
+\hbox{!include!\{{\it filename for first chapter}\}}
+\hbox{!include!\{{\it filename for second chapter}\}}
+\hbox{...}
+\hbox{!include!\{{\it filename for first appendix}\}}
+\hbox{!include!\{{\it filename for second appendix}\}}
+\hbox{...}
+\hbox{!include!\{{\it filename for references}\}}
+\hbox{!end! \{document\}}}}}
+
+The first line of your file must be the 
+\verb+documentclass {udthesis}+ command.  
+If you do not include a font size after
+!documentclass!, or you try to specify 11-point font, your document
+will be printed in the 12-point font regardless.
+
+\noindent A typical input file for a chapter or appendix might look like this:
+
+\mskip
+\begin{verbatim}
+\chapter {Introduction}
+\section {Section One}
+\end{verbatim}
+\mskip
+
+The included file for the title and approval page and other front 
+material might look like this (comments are set off by \% signs):
+
+\lbar
+\begin{verbatim}
+(Title Page commands)     % see Title and Approval Page section
+\maketitlepage            % make title page 
+\begin{approvalpage}      % begin approval page
+(Approval Page commands)  % see Title and Approval Page section
+\end{approvalpage}        % end approval page
+\begin{signedpage         % begin signature page (Dissertation only)
+(Signature Page commands) % see Title and Approval Page section
+\end{signedpage}          % end signature page
+
+\begin{front}             % begin front material
+\prefacesection{title for acknowledgments} 
+   (text)
+\maketocloflot            % create table of contents, 
+                          % list of figures, and list of tables 
+\prefacesectiontoc{title for abstract}
+   (text)
+\prefacesectiontoc{title for summary}
+   (text)
+\end{front}               % end front material
+\end{verbatim}
+\lbar
+
+{\bf Note: } If you do not need to generate a list of figures, put
+\verb+\figurespagefalse+ before \verb+\maketocloflot+.  If you do not
+need to generate a list of tables, put \verb+\tablespagefalse+ before
+\verb+\maketocloflot+.
+
+\newpage
+\section*{Running One Chapter at a Time}
+\addcontentsline{toc}{section}{Running One Chapter at a Time}
+
+The best way to run a chapter by itself is to use the \verb+\include+ macro
+rather than \verb+\input+. You can tell \LaTeX\ which file to include
+by using the \verb+\includeonly+ macro.  The advantage with this method
+is the ability to retain the correct chapter and page numbers for the
+files you choose to format.  Here is a typical main manuscript 
+file, using this method.
+
+\lbar
+\begin{verbatim}
+\documentclass {udthesis}
+\includeonly{tap}
+\begin{document}
+\include{tap}
+\include{chap1}
+\include{chap2}
+\include{chap3}
+\include{chap4}
+\include{appA}
+\include{appB}
+\end{document}
+\end{verbatim}
+\lbar
+
+The above example would format the file {\bf tap.tex}, which is the
+Title and Approval pages.  If you use this method, you must format the
+files in order at least once to set up the correct chapter and page
+numbers.  Please refer to the User Services' document
+\LaTeX\ Advanced Topics: ``Separating Files'' on page 22 or Leslie 
+Lamport's \LaTeX\ book: ``Splitting Your Input'' on page 75 for
+additional help.
+
+
+\chapter*{Automatic Numbering}
+\addcontentsline{toc}{chapter}{Automatic Numbering}
+\noindent \LaTeX\ automatically generates numbers for the sections of your 
+document.
+Following are the sectioning commands you can use in UDThesis and the results
+they
+will produce in your text.
+\section*{Sectioning Commands}
+\addcontentsline{toc}{section}{Sectioning Commands}
+
+\vspace*{\baselineskip}
+\begin{center}
+\renewcommand{\arraystretch}{.75}
+\begin{tabular}{|l||l|}\hline
+!chapter!&automatically numbers chapters; you supply chapter title\\
+&e.g., \verb+\chapter{Introduction}+\\
+!chapter*!&same as \verb+\chapter+, but unnumbered \\
+& and no Table of Contents entry\\
+!appendix!&same as \verb+\chapter+, but for appendices\\
+&e.g., \verb+\appendix{Computer Programs}+\\
+!oneappendix!&same as \verb+\appendix+, but used for only one appendix\\
+!prefacesection!&same as \verb+\chapter*+, but used only in the front material
+\\ &and no Table of Contents entry\\
+&e.g., \verb+\prefacesection{Acknowledgments}+\\
+!prefacesectiontoc!&same as \verb+\prefacesection+, but there is\\
+&a Table of Contents entry\\
+&e.g., \verb+\prefacesectiontoc{Abstract}+\\
+!section!&numbered within Chapter or Appendix\\
+&e.g., \verb+\section{Melt Down}+\\
+!section*!&same as \verb+\section+, but unnumbered\\
+!subsection!&numbered within Section\\
+&e.g., \verb+\subsection{The First Minute After}+\\
+!subsection*!&same as \verb+\subsection+, but unnumbered\\
+!subsubsection!&numbered within SubSection\\
+&e.g., \verb+\subsubsection{The First Day After}+\\
+!subsubsection*!&same as \verb+\subsubsection+, but unnumbered\\\hline
+\end{tabular}
+\end{center}
+
+
+\subsection*{Putting an Unnumbered Entry in the Table of Contents} 
+\addcontentsline{toc}{subsection}{Adding an Unnumbered Table of Contents Entry} 
+
+If you use the \verb+*+ form of the sectioning commands, there will be no entry made in the
+Table of Contents.  If you would like an unnumbered entry in the Table of
+Contents, use
+
+\mskip
+\verb+\addcontentsline{toc}+\{{\it section type}\}\{{\it title}\}
+\mskip
+
+\noindent where {\it section type} is the name of one of the sectioning commands
+without
+the \verb+\+ and {\it title} is the text to be entered into the Table of
+Contents.  It is most convenient to include the \verb+\addcontentsline{toc}+
+command immediately after each sectioning command in your thesis.  Remember that
+you only need to do this if you use the \verb+*+ form of the sectioning command.
+For example,
+
+\begin{verbatim}
+\section*{All Figures Representing X,Y,Z Data}
+\addcontentsline{toc}{section}{All Figures Representing X,Y,Z Data}
+\end{verbatim}
+
+\subsection*{Breaking a Long Title}
+\addcontentsline{toc}{subsection}{Breaking a Long Title}
+If a chapter title is long and you need to break it, use the
+\verb+\protect\linebreak+
+command after the word where you want to break the line.  For example
+
+\begin{verbatim}
+\chapter{This is a very long title\protect\linebreak
+         that will be centered properly}
+\end{verbatim}
+
+\section*{Numbered and Unnumbered Equations}
+\addcontentsline{toc}{section}{Numbered and Unnumbered Equations}
+
+\begin{enumerate}
+\item  {\bf Numbered Equations}
+
+The {\bf equation} and {\bf eqnarray} math environments generate
+numbers that can be assigned to a key with
+a {\bf !label!} command. 
+The environments 
+
+\begin{center}
+\begin{tabular}{l}
+\verb+\begin{equation}+ {\it formula} \verb+\end{equation}+\\
+\verb+\begin{eqnarray}+ {\it formula} \verb+\end{eqnarray}+
+\end{tabular}
+\end{center}
+ 
+\noindent will put the equation number flush right 
+with the margin, unless the {\bf leqno} document style option is used. Each
+equation number is produced within a chapter or appendix.  See 
+page~\pageref{equ1} for an example.
+
+\item {\bf Unnumbered equations}
+
+There are two types of unnumbered equations:
+
+\begin{enumerate}
+\item {\bf in-text}  A formula that appears in the middle of a sentence is
+called an {\bf in-text}
+formula.  There are three ways to produce an in-text formula:
+
+\vspace*{.25\baselineskip}
+\begin{tabular}{@{\hspace{.5in}}l}
+\$ {\it formula} \$ \\
+\verb+\+( {\it formula} \verb+\+)\\
+\verb+\begin{math}+ {\it formula} \verb+\end{math}+\\
+\end{tabular}
+\vspace*{.25\baselineskip}
+\item {\bf displayed} A displayed formula appears outside of the running text.
+Displayed equations
+are centered and unnumbered.  These can be produced in three ways:
+
+\vspace*{.25\baselineskip}
+\begin{tabular}{@{\hspace{.5in}}l}
+\$\$ {\it formula} \$\$\\
+\verb+\+[ {\it formula} \verb+\+]\\
+\verb+\begin{displaymath}+ {\it formula} \verb+\end{displaymath}+\\
+\end{tabular}
+\vspace*{.25\baselineskip}
+\end{enumerate}
+\end{enumerate}
+
+\section*{Footnote Numbers}
+\addcontentsline{toc}{section}{Footnote Numbers}
+
+\noindent Footnotes will be numbered automatically by using the 
+\verb+\fnote+ command. To create a footnote, use 
+
+\verb+\footnote+\{{\it text of footnote}\}
+
+\lbar
+
+\noindent {\bf What you type:}
+
+\begin{verbatim}
+This is a footnote.\footnote{What is this all about?} Now how
+about a second one.\footnote{Isn't this easy?}
+\end{verbatim}
+
+\noindent {\bf Result:}
+
+This is a footnote.\footnote{What is this all about?} Now how
+about a second one.\footnote{Isn't this easy?}
+
+\lbar
+
+\newpage
+\section*{Endnote Numbers}
+\addcontentsline{toc}{section}{Endnote Numbers}
+\setcounter{footnote}{0}
+\noindent Endnotes will be numbered automatically by using the
+\verb+\enote+ command. To create an endnote, use
+
+\verb+\enote+\{{\it text of endnote}\}
+
+\lbar
+
+\noindent {\bf What you type:}
+
+\begin{verbatim}
+This is an endnote.\enote{You should not mix footnotes and endnotes.} 
+Now how about a second one.\enote{Use one or the other.}
+\end{verbatim}
+
+\noindent {\bf Result:}
+
+This is an endnote.\enote{You should not mix footnotes and endnotes.} 
+Now how about a second one.\enote{Use one or the other.}
+
+\lbar
+
+To produce the list of endnotes, use \verb+\endnotes+\{{\it Title}\}
+command at the end of each chapter or 
+at the end of your entire document in {\bf main.tex}.  For example,
+
+\lbar
+
+\noindent {\bf What you type:}
+
+\begin{verbatim}
+\endnotes{Notes}
+\end{verbatim}
+
+\noindent {\bf Result:}
+
+\endnotes{Notes}
+
+\lbar
+
+\newpage
+\section*{Figures and Tables}
+\addcontentsline{toc}{section}{Figures and Tables}
+
+\noindent A figure or table number will be produced whenever 
+a \verb+\caption+[{\it entry}]\{{\it heading}\} command
+appears within a {\bf figure} or {\bf table} environment.
+You can use the {\it entry} option to specify an
+alternative heading for the List of Figures or List of Tables.  If you do
+not use this option, the {\it heading}---the actual
+text of the caption---will be used.  These environments are of the form
+
+\verb+\begin{figure}+[{\it loc}] {\it body} \verb+\end{figure}+
+
+\noindent or
+
+\verb+\begin{table}+[{\it loc}] {\it body} \verb+\end{table}+
+
+\noindent where {\it body} is the actual figure or table.  Use the 
+{\it loc}
+option to specify the location of the figure or table.  Possibilities
+for placement are {\bf h} (here), {\bf t} (top), {\bf b} (bottom), and 
+{\bf p} (page).  You should always include the {\bf p} option with any 
+other options. If you do not specify a location, the default
+is {\bf tbp}.   
+The figure or table will be placed on the first page on which space 
+is available for the entire body of your figure or table.  The number 
+is generated within the chapter or appendix when ever a \verb+\caption+
+is used.  Therefore you may use \verb+\caption+ more than once within
+the figure or table environment.  This is especially nice if you want 2
+figures or tables to be kept together on one page.
+See page~\pageref{fig1} for examples of multiple captions in one figure
+environment and single caption in a table environment.
+
+You may find it difficult to convince \LaTeX\ to put your figure or
+table where you want it.  It is best to place the figure or table
+environment commands close to where you think the top of a new page will
+start. 
+
+{\bf Note:}  This environment is meant to create a floating area within
+your document.  It does NOT actually create a table or figure, you need
+to use the {\bf tabular} environment for tables (Leslie Lamport's book,
+pages 63 and 182) and the {\bf picture} environment for figures (Leslie
+Lamport's book, pages 101 and 196).  These other environments are part
+of \LaTeX, however you can use other graphics packages to import
+graphics.  These graphics must be compatible with your printer.
+
+
+\subsection*{Full Page Figures and Tables}
+\addcontentsline{toc}{subsection}{Full Page Figures and Tables}
+
+To create a full page figure or table you need to use \verb+\vbox+ to
+make an imaginary box the height of the entire page.  
+For normal full page figures and tables, where a figure or table will not
+be pasted in later, use the following method.  The figure or table will
+be centered vertically on the page.
+
+\noindent {\bf Full Page Figure:}
+
+\lbar
+\begin{verbatim}
+\begin{figure}
+\vbox to \textheight{%
+\vfill
+[the body of the figure goes here]
+\caption{This is My Full Page Figure}
+\vfill}
+\end{figure}
+\end{verbatim}
+\lbar
+
+\noindent {\bf Full Page Table:}
+
+\lbar
+\begin{verbatim}
+\begin{table}
+\vbox to \textheight{%
+\vfill
+\caption{This is My Full Page Table}
+[the body of the table goes here]
+\vfill}
+\end{table}
+\end{verbatim}
+\lbar
+
+\newpage
+
+The examples below
+show how to create a full page figure or table that will be pasted in later.
+
+\subsection*{Paste-in Full Page Figure}
+\addcontentsline{toc}{subsection}{Paste-in Full Page Figures and
+Tables}
+
+The top of the page is blank with whe caption is flush at the bottom of
+the page.
+
+\lbar
+\begin{verbatim}
+\begin{figure}
+\vbox to \textheight{%
+\vfill
+\caption{This is Paste-in My Full Page Figure}}
+\end{figure}
+\end{verbatim}
+\lbar
+
+\subsection*{Paste-in Full Page Table}
+
+The caption is flush at the top of the page and the rest of the page is
+blank.
+
+\lbar
+\begin{verbatim}
+\begin{table}
+\vbox to \textheight{%
+\caption{This is Paste-in My Full Page Table}
+\vfill}
+\end{table}
+\end{verbatim}
+\lbar
+
+
+\newpage
+
+\chapter*{Creating Cross-References in UDThesis Format}
+\addcontentsline{toc}{chapter}{Creating Cross-References in UDThesis Format}
+
+\noindent All referencing is done by using the 
+\verb+\label+\{{\it key}\}
+command where {\it key} is
+the word you use
+to refer to the number of the chapter,
+appendix, section, subsection, subsubsection, equation, figure, or table.
+Once you have assigned this key, you can refer to the number (of the appropriate
+section) by using
+\verb+\ref+\{{\it key}\}
+and to the appropriate page by using
+\verb+\pageref+\{{\it key}\}
+(to refer to the page number).
+These commands do not insert text before the numbers.  This means that you must
+insert the word ``chapter,'' ``appendix,'' ``section,'' ``subsection,''
+``subsubsection,'' ``equation,'' ``figure,'' or ``table'' before the 
+\verb+\ref+ and \verb+\pageref+ commands.
+You should use a ``{\bf\til}'' between the proper word and
+{\bf !ref!} and {\bf !pageref!} to prevent a line break from occurring between
+the word and the number that follows it.
+There can be no spaces before or after the ``{\bf\til}''
+(see examples below).
+
+{\bf Note:} If you want a reference to be within another macro, like
+\verb+\chapter+, \verb+\section+, \verb+\caption+, etc., then you must use 
+\verb+\protect+ before that reference command.   For example
+
+\lbar
+
+\begin{verbatim}
+\begin{figure}
+\vspace*{4.5in}
+\caption{Referencing another figure, see figure\protect\ref{fig1}}
+\label{fig3}
+\end{figure}
+\end{verbatim}
+
+\lbar
+
+\newpage
+\section*{Referring to a Chapter, Appendix or Section}
+\addcontentsline{toc}{section}{Referring to a Chapter, Appendix, or Section}
+\noindent The next example illustrates references to a section and a subsection.
+References to all other sectioning commands would work in the same way.
+
+\lbar
+\noindent {\bf What you type}:
+
+\begin{verbatim}
+
+\section{This is the first section}
+\label{sec1}
+In section one, we will present our hypothesis.
+
+\subsection{This is the first subsection}
+\label{ssec1}
+In section~\ref{sec1} on page~\pageref{sec1}, you will 
+find the statement of our hypothesis. It is explained more fully in 
+section~\ref{ssec1} on page~\pageref{ssec1}.
+\end{verbatim}
+
+\noindent {\bf Result}:
+
+\setcounter{chapter} {1}
+\section{This is the first section}
+\label{sec1}
+In section one, we will present our hypothesis.
+\subsection{This is the first subsection}
+\label{ssec1}
+In section~\ref{sec1} on page~\pageref{sec1}, you will 
+find the statement of our hypothesis.  It is explained more fully in 
+section~\ref{ssec1} on 
+page~\pageref{ssec1}.
+
+\lbar
+
+\newpage
+\section*{Referring to Tables and Figures}
+\addcontentsline{toc}{section}{Referring to Tables and Figures}
+
+\noindent According to the Graduate School guidelines,
+figure numbers and captions must be {\bf below} the figure,
+while table numbers and 
+captions must be {\bf above} the table.
+The following example shows how to create and refer to a figure. 
+
+\lbar
+\noindent {\bf What you type}:
+
+\begin{verbatim}
+\begin{figure}[h]
+[The body of the first figure goes here.]
+\caption{Circuit Diagram I - 1935}
+\label{fig1}
+\vspace*{1.5in}
+[The body of the second figure goes here.]
+\caption{Circuit Diagram I - 1936}
+\label{fig2}
+\end{figure}
+
+Figure~\ref{fig1} on page~\pageref{fig1} shows the circuit diagram used
+for the preliminary SDI research in 1935 and figure~\ref{fig2} on
+page~\pageref{fig2} in 1936.
+\end{verbatim}
+
+\noindent {\bf Result}:
+
+\begin{figure}[h]
+\centerline{[The body of the figure goes here.]}
+\caption{Circuit Diagram - 1936}
+\label{fig1}
+\vspace*{1.5in}
+\centerline{[The body of the second figure goes here.]}
+\caption{Circuit Diagram I - 1936}
+\label{fig2}
+\end{figure}
+
+Figure~\ref{fig1} on page~\pageref{fig1} shows the circuit diagram used
+for the preliminary SDI research in 1935 and figure~\ref{fig2} on
+page~\pageref{fig2} in 1936.
+
+\lbar
+
+\newpage
+The next example shows how to create and refer to a table. 
+
+\lbar
+\noindent {\bf What you type}:
+
+\begin{verbatim}
+
+\begin{table}[h]
+\caption{Table Example - 1987 Budget Report}
+[The body of the table goes here.]
+\label{tab1}
+\end{table}
+
+Table~\ref{tab1} on page~\pageref{tab1} shows an example of where to place
+a table caption.
+\end{verbatim}
+
+\noindent {\bf Result}:
+
+\begin{table}[h]
+\caption{Table Example - 1987 Budget Report}
+\center [The body of the table goes here.]
+\label{tab1}
+\end{table}
+
+Table~\ref{tab1} on page~\pageref{tab1} shows an example of where to place a
+table caption.
+
+\lbar
+
+\section*{Referring to Equations}
+\addcontentsline{toc}{section}{Referring to Equations}
+
+\noindent To refer to an equation number, you must use one of the math
+environments that
+number equations.  They are
+
+\verb+\begin{equation}+ {\it formula} \verb+\end{equation}+
+\mskip
+\noindent or
+\mskip
+\verb+\begin{eqnarray}+ {\it formula} \verb+\end{eqnarray}+
+
+\noindent where {\it formula} is the math equation that you supply.
+To define a label
+for an equation number, you must put the \verb+\label+\{{\it key}\}
+command on the
+line of the formula to which you want to refer.
+ 
+\newpage
+The following example shows how to generate equation numbers for a single and
+a multilined equation.
+
+\lbar
+\noindent {\bf What you type}:
+
+\begin{verbatim}
+
+\begin{equation}
+x = {x \over 2} \label{equ1}
+\end{equation}
+
+\begin{eqnarray}
+x & = & 17y \label{equ2}\\
+y & > & a+b+c+d+ \nonumber\\
+  &   & e+f+g
+\end{eqnarray}
+
+Equation~\ref{equ1} on page~\pageref{equ1} is an example of a simple
+displayed equation and equation~\ref{equ2} on page~\pageref{equ2} is
+an example of a multilined equation.
+\end{verbatim}
+
+\noindent {\bf Result}:
+
+\begin{equation}
+x = {x \over 2} \label{equ1}
+\end{equation}
+
+\begin{eqnarray}
+x & = & 17y \label{equ2}\\
+y & > & a+b+c+d+ \nonumber\\
+  &   & e+f+g
+\end{eqnarray}
+
+Equation~\ref{equ1} on 
+page~\pageref{equ1} is an example of a simple displayed equation and
+equation~\ref{equ2} on page~\pageref{equ2} is an example of a multilined
+equation.
+
+\lbar
+
+\chapter*{List of References}
+\addcontentsline{toc}{chapter}{List of References}
+
+\noindent In \LaTeX, you can create a bibliography or list
+of references in two ways.  You
+can either produce a list of sources yourself or use a separate program called
+\BIBTeX\ to generate a list from information you have stored in a bibliographic
+database.  Both methods are explained in detail in Leslie Lamport's \LaTeX\
+book, section 4.3. 
+
+{\bf Note:} If you want to cite a reference within another macro, like
+\verb+\chapter+, \verb+\section+, \verb+\caption+, etc., then you must use 
+\verb+\protect+ before that \verb+cite+ command.   For example
+
+\lbar
+
+\begin{verbatim}
+\begin{figure}
+\vspace*{4.5in}
+\caption{Very important figure\protect\cite{Abr86}}
+\label{fig4}
+\end{figure}
+\end{verbatim}
+
+\lbar
+
+\section*{Using \BIBTeX}
+\addcontentsline{toc}{section}{Using \BIBTeX}
+
+\noindent \BIBTeX\ is a separate program from \LaTeX.  This program creates a
+{\bf .bbl} file that will be read by \LaTeX\ to create references to sources
+that you
+cite in your thesis with the \verb+\cite+ command.  The {\bf .bbl} file that
+\BIBTeX\ creates is taken from a bibliographic database file that contains
+information about your sources.  This database file must have the extension
+{\bf .bib}
+and must follow a specific format.  For the format, consult the \LaTeX\ book or
+the \BIBTeX\ document in the Smith Consulting Center (002 Smith Hall).  Once you
+have created the {\bf .bib} file, you tell \LaTeX\ to use it by including the
+following command in your {\bf main.tex} file:
+
+\bskip
+\verb+\bibliography+\{{\it file}({\it s})\}
+\bskip
+
+\noindent where {\it file}({\it s}) is the name of your {\bf .bib} file or 
+files.
+See the example in the Appendix on page~\pageref{main2} for including the
+\verb+\bibliography+ command in your {\bf main.tex} file.
+If you have more than one bibliographic database file, separate each
+file name with a comma.  For example, if you have two databases---{\bf acs.bib}
+and {\bf ait.bib}, you would use the form \verb+\bibliography+\{acs,ait\}.
+
+After you have included your database files in the {\bf main.tex} file, you
+must select a bibliography style file with the command
+
+\bskip
+\verb+\bibliographystyle+\{{\it type}\}
+\bskip
+
+\noindent where {\it type} can be one of four styles:
+
+\begin{itemize}
+\item {\bf plain}--sorted alphabetically with numbered labels
+\item {\bf unsrt}--listed in order of citing in the text; numbered labels
+\item {\bf alpha}--sorted alphabetically with labels formed from author's name
+and the year of publication
+\item {\bf abbrv}--same as {\bf plain} except that first names, and names of
+months and journals are abbreviated
+\end{itemize}
+
+To refer to the bibliography item in your text, use the \verb+\cite+ command.
+If you would like to have a bibliography entry included in your list of
+references but not cited in your text, you can refer to it using the
+\verb+\nocite+ command.  You can place this command anywhere after the
+\verb+\begin{document}+ command.
+
+Once you have created your database file and included the appropriate
+references to it in your {\bf main.tex} file and the citations in your
+individual
+chapter files,
+you run your {\bf main.tex} file through \LaTeX, then
+through \BIBTeX, and then
+through \LaTeX\ again.  This process will create the {\bf .bbl} file and allow
+it to be used by \LaTeX. 
+
+\newpage
+In general if you make a bibliographic database and want to use
+it with \LaTeX, do the following
+
+\begin{itemize}
+\item {\bf latex} {\it filename}
+\item {\bf bibtex} {\it filename}
+\item {\bf latex} {\it filename}
+\end{itemize}
+
+\noindent where {\it filename} is the name of your {\bf main.tex} file.
+
+{\bf Note:}  If you add or remove any citations in your database file,
+you will have to 
+rerun your {\bf main.tex} file through \LaTeX, then through \BIBTeX, and then
+through \LaTeX\ again.
+
+
+The following example shows the format for book entries in a {\bf .bib} file.
+
+\lbar
+\begin{verbatim}
+
+@book(lov78,
+author = "Donald W. Loveland",
+title = "Automated Theorem Proving: A Logical Basis",
+publisher = "North-Holland Publishing Company",
+year = 1978,
+address = "New York")
+\end{verbatim}
+
+\lbar
+
+\section*{Creating a List of Sources Yourself}
+\addcontentsline{toc}{section}{Creating a List of Sources Yourself}
+
+Following is some necessary information for creating a list
+of sources yourself using the {\bf thebibliography} environment.
+You use the {\bf thebibliography} environment whether you want your
+list of references
+to be called ``REFERENCES'' or ``BIBLIOGRAPHY.''  Begin the environment with
+
+\bskip
+\verb+\begin{thebibliography}+ \{{\it label width}\}
+\bskip
+
+\noindent and end it with
+
+\bskip
+\verb+\end{thebibliography}+
+\bskip
+
+\noindent The {\bf thebibliography} environment is like the \LaTeX\ 
+list environments
+except that
+
+\begin{itemize}
+\item Each item begins with a !bibitem! command.  This command is followed by a
+key by which the item can be cited in the text with a !cite! command.
+
+\item The {\bf thebibliography} environment includes a {\it label width},
+that is, a
+number or series of letters that is the same width as or slightly wider than
+the widest item label in your list of sources. (For example, if your list has
+500 entries, you might choose ``999'' as your label width because ``999'' is
+as wide as all other three-digit numbers.)
+\end{itemize}
+
+You can choose what to call your references section by redefining
+\verb+\bibname+ with the name of the title
+ before {\bf thebibliography} environment command.
+
+The following example shows how you would construct a {\bf thebibliography}
+environment, how you would cite a source in your text and change the
+title of your references to ``References'' rather than ``Bibliography''.
+
+\lbar
+\begin{verbatim}
+
+\renewcommand{\bibname}{References}
+\begin{thebibliography}{999}
+\bibitem{Catt1} Cattell, R.B. 1966. ``The Screen Test for the Number of
+         Factors.'' {\it Multivariate Behavior Research}, 1: 245-276.
+\end{thebibliography}
+\end{verbatim}
+
+\begin{verbatim}
+See \cite{Catt1} for more information on the test.
+\end{verbatim}
+
+\lbar
+
+\newpage
+\chapter*{Additional Commands}
+\addcontentsline{toc}{chapter}{Additional Commands}
+
+\section*{Hanging Indent References}
+\addcontentsline{toc}{section}{Hanging Indent References}
+
+Hang indent references can be created with the {\bf thereferences}  
+environment. To use this environment:
+
+\lbar
+\noindent {\bf What you type}:
+
+\begin{verbatim}
+\begin{thereferences}
+Leslie Lamport, \LaTeX: {\it A Document Preparation System} (User's 
+Guide and Reference Manual), 1986, Addison-Wesley, Reading, Massachusetts.
+
+Donald Knuth, {\it The \TeX book}, 1986, Addison-Wesley, Reading,
+Massachusetts.
+\end{thereferences}
+\end{verbatim}
+
+\noindent {\bf Result}:
+
+\begin{thereferences}
+Leslie Lamport, \LaTeX: {\it A Document Preparation System} (User's 
+Guide and Reference Manual), 1986, Addison-Wesley, Reading, Massachusetts.
+
+Donald Knuth, {\it The \TeX book}, 1986, Addison-Wesley, Reading,
+Massachusetts.
+\end{thereferences}
+
+\lbar
+
+\noindent This will produce the title {\bf REFERENCES}; however, you can specify a
+title using the option format 
+\begin{center}
+\begin{tabular}{l}
+\verb+\renewcommand{\bibname}{Bibliography}+\\
+\verb+\begin{thereferences} .. \end{thereferences}+
+\end{tabular}
+\end{center}
+
+\newpage
+\section*{Continuing Figures and Tables}
+\addcontentsline{toc}{section}{Continuing Figures and Tables}
+
+To continue a figure or table on another page without adding another figure
+or table number, you can use the \verb+\captioncont+\{\} command as follows:
+
+\lbar
+\noindent {\bf What you type}:
+
+\begin{verbatim}
+\begin{figure}
+     [The first part of the figure goes here.]
+\caption{This is my picture}
+\end{figure}
+
+\begin{figure}
+     [The second part of the figure goes here.]
+\captioncont{continued}
+\end{figure}
+\end{verbatim}
+\noindent {\bf Result}:
+
+\begin{figure}[h]
+\center [The first part of the figure goes here.]
+\center {\bf Figure 1.1:} This is my picture
+\end{figure}
+
+\begin{figure}[h]
+\center [The second part of the figure goes here.]
+\center {\bf Figure 1.1:} continued
+\end{figure}
+
+\lbar
+\noindent Note that the figure number is the same for the second 
+figure when using \verb+\captioncont+.  If you were using the table
+environment instead of the figure environment (as in the above
+example), then the table number would be the same if you used 
+\verb+\captioncont+.
+
+\newpage
+\section*{Glossary or List of Symbols}
+\addcontentsline{toc}{section}{Glossary or List of Symbols}
+
+To create a glossary or list of symbols a {\bf desc} environment has
+been created. You can use this environment as follows:
+
+\lbar
+\noindent {\bf What you type}:
+
+\begin{verbatim}
+\prefacesectiontoc{Glossary}
+\begin{desc}
+\item[cat] A carnivorous mammal domesticated since early times as a catcher of 
+rats and mice and as a pet.
+\item[mouse]  Any of numerous small rodents of the families Muridae and 
+Cricetidae, such as the common house mouse, characteristically having a long,
+naked or almost hairless tail.
+\item[mousetrap] A trap for catching mice.
+\end{desc}
+\end{verbatim}
+
+\noindent {\bf Result}:
+
+\begin{center}
+{\large\bf GLOSSARY}
+\end{center}
+\begin{desc}
+\item[cat] A carnivorous mammal domesticated since early times as a catcher of 
+rats and mice and as a pet.
+\item[mouse]  Any of numerous small rodents of the families Muridae and 
+Cricetidae, such as the common house mouse, characteristically having a long,
+naked or almost hairless tail.
+\item[mousetrap] A trap for catching mice.
+\end{desc}
+
+\lbar
+\noindent This will align all definitions after the words or symbols. A maximum
+label width of one inch is provided for each item.
+
+\chapter*{Order of the UDThesis Sections}
+\addcontentsline{toc}{chapter}{Order of the UDThesis Sections}
+
+\noindent The order in which
+you generate the parts of your documents is critical.  To have your page and
+section numbers
+generated correctly, you need to follow
+this ordering:
+
+\vspace{.25in}
+
+\hbox to \textwidth{\hfil\vbox{
+\hbox{Title and Approval Page}
+\hbox{Acknowledgments}
+\hbox{Preface}
+\hbox{Contents--the table of contents}
+\hbox{FigureContents--the list of figures}
+\hbox{TableContents--the list of tables}
+\hbox{Abstract}
+\hbox{Summary}
+\hbox{(body of thesis, dissertation, or executive posistion paper)}
+}\hfil}
+
+{\bf Note}--The page numbers in these parts (except for the body of the
+thesis) are in lower-case
+Roman numerals; the page numbers throughout the remainder of the
+thesis are in Arabic numerals.  This change in style is automatic and occurs
+when UDThesis produces each part.
+
+\section*{Title and Approval Page}
+\addcontentsline{toc}{section}{Title and Approval Page}
+
+\noindent UDThesis uses a series of commands to make the formatting of title
+and approval
+page easy.
+Generally, there is some standard text
+associated with each command which appears only if you include the command.
+Note that all the commands are in
+lower case; this is how they must appear in your document or an error
+will occur.  The commands are
+
+\newpage
+\lbar
+\bskip
+\noindent {\bf Title Page}:
+\begin{verbatim}
+
+\title{Title of paper}
+         % To indicate a new line in the title, use \linebreak
+         % at the end of each line but the last. The title is converted to 
+         % upper case automatically.    
+\author{name of author}
+\type{type of document} % e.g., thesis, dissertation or 
+                        %       executive position paper
+\degree{name of degree} % e.g., Master of ..., Doctor of Philosophy or
+                        %       Doctor of Education 
+\educationtrue or \educationfalse
+         %To indicate whether or not the document is an executive 
+         %position paper.
+         %Default is \educationfalse.
+\majorfieldtrue or \majorfieldfalse
+         % To indicate whether or not a major is to be included. 
+         % Default is \majorfieldfalse.
+\majorfield{name of majorfield} % e.g., Physics
+         % Include only if you used \majorfieldtrue.
+\degreedate{date degree is to be granted} % e.g., Fall 1993
+                                          %       Spring 1993
+                                          %       Summer 1993
+\end{verbatim}
+
+\noindent {\bf Approval Page}:
+
+\begin{verbatim}
+\prof{name, highest degree of your thesis adviser}
+         %Do not use for dissertation or executive position paper.
+\prof{name, highest degree of your second thesis adviser}
+         %Do not use for dissertation or executive position paper.
+\chair{name, highest degree of Chair}{position (title) of Chair}         (1)
+\auxchair{name, highest degree of AuxChair}{position (title) of AuxChair}(2) 
+\dean{name, highest degree of Dean}{position (title) of Dean}            (3) 
+\end{verbatim}
+
+\noindent {\bf Statement and Signature Page}:(dissertation or executive
+position paper only)
+
+\begin{verbatim}
+\profmember{name, highest degree of your thesis adviser}
+\member{member of dissertation committee}
+         %Use for each member of your committee.
+\end{verbatim}
+
+\lbar
+
+{\bf Note for Thesis:} You must have at least three signatures on the 
+Approval Page: the first must be your thesis adviser's (\verb+\prof+);
+the second must be one of the following: (1) \verb+\chair+, 
+(2) \verb+\auxchair+, or 
+(3) \verb+\dean+; \LaTeX\ automatically places the third---Carol E. Hoffecker,
+Ph.D., Associate Provost for Graduate
+Studies---as the last signature on the
+Title and Approval page.
+
+{\bf Note for Dissertation and Executive Position Paper:} You do not use
+\verb+\prof+ on the Approval Page, this will be included on the Signature Page.
+The Signature Page requires at least four signatures: the first must be your
+adviser's (\verb+\profmember+), and the rest should be the other members
+(\verb+\member+) of your committee. 
+This page can have at most six signatures.
+
+\vspace*{-\baselineskip}
+\subsection*{Examples for Title and Approval Page}
+\addcontentsline{toc}{subsection}{Examples for Title and Approval Page}
+
+\vspace*{-.5\baselineskip}
+\noindent The following example illustrates the use of \LaTeX\
+to generate the
+Title and Approval Page and other information which will appear at the 
+beginning of your document.  You must insert this material
+at the {\bf beginning} of your document to produce the Title and Approval Page.
+See the examples in the {\bf Appendix} starting on page~\pageref{exfiles} 
+for more help.  
+
+\vspace*{-.5\baselineskip}
+\lbar 
+
+\addcontentsline{toc}{subsubsection}{Thesis Example}
+\noindent {\bf Thesis Title and Approval Page:} 
+\begin{verbatim} 
+
+\title{Irradiation and Annealing Effects\\
+	   in Amorphous Alloys}
+\author{John H. Poe}
+\type{thesis}
+\degree{Master of Science}
+\majorfieldtrue\majorfield{Physics} % optional
+\degreedate{Spring 1993}
+
+\maketitlepage 
+
+\begin{approvalpage}
+\prof{Jon B. Nill, Ph.D.}     
+\prof{K. Casey, Ph.D.} % use only if 2 advisers',
+                       % otherwise, omit.
+\chair{Willie B. Null, Ph.D.}{Chairman of the Department of Physics} 
+\end{approvalpage} 
+
+\begin{front} 
+
+\prefacesection{Acknowledgments}
+   \input{acknowl}
+
+\prefacesection{Preface}
+   \input{dedicat}
+
+\maketocloflot
+
+\prefacesectiontoc{Abstract}
+   \input{abstract}
+
+\end{front}
+\end{verbatim}
+
+\lbar
+\newpage
+
+\lbar
+\addcontentsline{toc}{subsubsection}{Dissertation or Executive Position Paper
+Example}
+\noindent {\bf Dissertation or Executive Position Paper Title and Approval Page:} 
+\begin{verbatim}
+
+\title{Irradiation and Annealing Effects\\
+	   in Amorphous Alloys}
+\author{Dale S. Hoover}
+\type{dissertation}
+\degree{Doctor of Philosophy}
+\majorfieldtrue\majorfield{Physics} % optional
+\degreedate{Spring 1993}
+
+\maketitlepage 
+
+\begin{approvalpage} 
+\chair{Willie B. Null, Ph.D.}{Chairman of the Department of Physics} 
+\end{approvalpage} 
+
+\begin{signedpage}
+\profmember{John L. Smith, Ph.D.}
+\member{Mary T. Less, Ph.D.}
+\member{Harry S. Shipley, Ph.D.}
+\member{Chang Lee, Ph.D.}
+\end{signedpage}
+
+\begin{front} 
+\prefacesection{Acknowledgments}
+   \input{acknowl}
+
+\prefacesection{Preface}
+   \input{dedicat}
+
+\maketocloflot 
+
+\prefacesectiontoc{Abstract}
+   \input{abstract}
+
+\end{front}
+\end{verbatim}
+
+\lbar
+
+
+\newpage
+
+\section*{Abstract with Title and Approval Page}
+\addcontentsline{toc}{section}{Abstract with Title and Approval Page}
+\noindent UDThesis provides the necessary macros to prepare an abstract
+with its own title and approval page.  You should make a {\it separate
+file\/} containing the necessary information and run it through
+\LaTeX\ apart from the rest of the document in order to give correct
+page numbers. Below is a list of the possible macros to be used
+in the separate file to generate an abstract with its own title and
+approval page.
+
+
+\begin{verbatim}
+\documentclass {udthesis}
+\begin{document}
+\title{document title}
+\author{author's name}
+\type{dissertation}
+\degree{Doctor of Philosophy}
+\majorfieldtrue\majorfield{major field of study} %optional
+\degreedate{Spring 1993}
+
+\begin{abtandapage}
+\abprof{adviser's name}
+\abprof{second adviser's name}    % use only if 2 advisers',
+                                  % otherwise omit
+\end{abtandapage}
+
+\prefacesection{Abstract}
+   \input{abstract}
+\end{document}
+\end{verbatim}
+
+\newpage
+\noindent{\bf Example Abstract with Title and Approval Page}
+\addcontentsline{toc}{subsection}{Example Abstract with Title and Approval Page}
+
+\lbar
+
+\begin{verbatim}
+\documentclass {udthesis}
+\begin{document}
+\title{A Preliminary Evaluation of the\linebreak
+       Delaware Cloud Seeding Project\linebreak
+       Using a Principal Components-Based\linebreak
+       Interpolation Model}
+\author{Roh T. Uana}
+\type{dissertation}
+\degree{Doctor of Philosophy}
+\majorfieldtrue\majorfield{Geography}
+\degreedate{Spring 1993}
+
+\begin{abtandapage}
+\abprof{Theodore Q. Mentor, Ph.D.}
+\end{abtandapage}
+
+\prefacesection{Abstract}
+\input{abstract}
+\end{document}
+\end{verbatim}
+
+\lbar
+
+\newpage
+\section*{Senior Thesis Title and Approval Page}
+\addcontentsline{toc}{section}{Senior Thesis Title and Approval Page}
+
+To format a senior thesis you need to use
+\verb+documentclass [seniorthesis] {udthesis}+ command.  
+
+
+Some changes have been made to the macros to produce a correct senior
+title and approval page. Generally, there is some standard text
+associated with each command which appears only if you include the
+command.  Note that all the commands are in lower case; this is how
+they must appear in your document or an error will occur.  The commands
+are
+
+\lbar
+\bskip
+\noindent {\bf Title Page}:
+\begin{verbatim}
+
+\title{Title of paper}
+         % To indicate a new line in the title, use \linebreak
+         % at the end of each line but the last. The title is converted to 
+         % upper case automatically.    
+\author{name of author}
+\degree{name of degree} % e.g., Bachelor of Science, Bachelor of Arts
+                        %       Bachelor of Civil Engineering, etc.
+\majorfieldtrue or \majorfieldfalse
+         % To indicate whether or not a major is to be included. 
+         % To be used when degree is Bachelor of Science or 
+         % Bachelor of Arts.
+         % Default is \majorfieldfalse.
+\majorfield{name of majorfield} % e.g., Physics
+         % Include only if you used \majorfieldtrue.
+\distinctiontrue or \distinctiontrue
+         % To indicate whether or not a degree with distinction
+         % Default is \distinctionfalse
+\degreedate{date degree is to be granted} % e.g., Fall 1993
+                                          %       Spring 1993
+                                          %       Summer 1993
+\end{verbatim}
+
+\noindent {\bf Approval Page}:
+
+\begin{verbatim}
+\prof{name, highest degree of your thesis adviser}
+\prof{name, highest degree of your second thesis adviser}
+\member{name, highest degree of committee member}{department}
+\ucosafhmember{name, highest degree of honors committee member}
+\chair{name, highest degree of honors chair}
+\end{verbatim}
+
+\lbar
+
+\newpage
+\subsection*{Examples for Senior Thesis Title and Approval Page}
+\addcontentsline{toc}{subsection}{Examples for Senior Thesis Title and Approval Page}
+\addcontentsline{toc}{subsubsection}{Degree with Distinction}
+
+\noindent {\bf Degree with Distinction}
+
+\begin{verbatim} 
+
+\title{Low Temperature Specific Heat of\\
+	   Amorphous Nickel-Boron Alloys}
+\author{Robert Motsay}
+\degree{Bachelor of Science}
+\majorfieldtrue\majorfield{Physics} % optional
+\distinctiontrue
+\degreedate{May 1993}
+
+\maketitlepage 
+
+\begin{approvalpage} 
+\prof{David G. Onn, Ph.D.}     
+\member{Ferd Williams, Ph.D.}{Department of Physics and Astronomy}
+\ucosafhmember{Arnold Kerr, Ph.D.}
+\chair{Michael P. Rewa, Ph.D.}
+\end{approvalpage} 
+
+\begin{front} 
+
+\prefacesection{Acknowledgments}
+   \input{acknowl}
+
+\prefacesection{Preface}
+   \input{dedicat}
+
+\maketocloflot
+
+\prefacesectiontoc{Abstract}
+   \input{abstract}
+
+\end{front}
+\end{verbatim}
+
+\addcontentsline{toc}{subsubsection}{Honors Degree}
+
+\newpage
+\noindent{\bf Honors Degree}
+
+\begin{verbatim} 
+
+\title{Literary Theory in the Critical\\
+	   Writings of Virginia Woolf}
+\author{Jane J. Doe}
+\degree{Bachelor of Arts}
+\majorfieldtrue\majorfield{English} % optional
+\degreedate{May 1993}
+
+\maketitlepage 
+
+\begin{approvalpage} 
+\prof{Bonnie K. Scott, Ph.D.}     
+\member{Hans-Peter Breuer, Ph.D.}{Department of English}
+\ucosafhmember{Patricia Leighten, Ph.D.}
+\chair{Robert F. Brown, Ph.D.}
+\end{approvalpage} 
+
+\begin{front}
+
+\prefacesection{Acknowledgments}
+   \input{acknowl}
+
+\prefacesection{Preface}
+   \input{dedicat}
+
+\maketocloflot
+
+\prefacesectiontoc{Abstract}
+   \input{abstract}
+
+\end{front}
+\end{verbatim}
+
+\chapter*{Appendix\\
+           More Example Files}
+\addcontentsline{toc}{chapter}{Appendix:  More Example Files}
+\label{exfiles}
+
+\lbar
+\noindent {\bf main.tex}
+
+\begin{verbatim}
+
+\documentclass {udthesis}
+\begin{document}
+\include{tap}
+\include{chap1}
+\include{chap2}
+\include{chap3}
+\include{ref}
+\end{document}
+\end{verbatim}
+
+This example shows a main file that includes a bibliography you create 
+yourself using the {\bf thebibliography} environment.
+
+\lbar
+\noindent {\bf main.tex}
+
+\begin{verbatim}
+
+\documentclass {udthesis}
+\begin{document}
+\include{tap}
+\include{chap1}
+\include{chap2}
+\include{chap3}
+\bibliography{com}
+\bibliographystyle{plain}
+\end{document}
+\end{verbatim}
+
+This example shows a main file that includes a bibliography created using
+\BIBTeX.
+\label{main2}
+
+\lbar
+
+\pagebreak
+
+\lbar
+\noindent {\bf chap1.tex}
+
+\begin{verbatim}
+
+\chapter{Introduction}
+\section{The Delaware Cloud Seeding Project}
+\subsection{Historical Background}
+Attempts at weather modification from
+aircraft, through the introduction of
+foreign material into clouds, are
+relatively recent phenomena.  It was a
+dark and stormy night ...
+
+Since clouds were first seeded, at
+least .......
+\end{verbatim}
+\lbar
+
+\noindent {\bf ref.tex}
+
+\begin{verbatim}
+
+\renewcommand{\bibname}{References}
+\begin{thebibliography}{999}
+\bibitem {Bra1} Brahm, R.R., Jr.  1979.  ``Field Experimentation in 
+                Weather Modification.'' {\it Journal of the American 
+                Statistical Association}, 74(365): 57-68.
+
+\bibitem {Catt1} Cattell, R.B.  1966.  ``The Screen Test for the Number 
+                 of Factors.'' {\it Multivariate Behavioral Research}, 
+                 1: 245-276.
+\end{thebibliography}
+\end{verbatim}
+
+\lbar
+
+The Title of {\bf thebibliography} will be {\bf REFERENCES}
+
+\lbar
+
+\noindent {\bf abstract.tex}
+
+\begin{verbatim}
+
+An empirical method, based on principal
+components analysis for the spatial 
+interpolation of daily rainfall,
+is described and tested using...
+\end{verbatim}
+\lbar
+
+\end{document}

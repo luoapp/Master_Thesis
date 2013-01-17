@@ -1,0 +1,73 @@
+% seniorthesis.clo  29-Mar-2000
+
+\ProvidesFile{seniorthesis.cls}[2000/03/29]
+%
+% Title and Approval Page Changes for Senior Thesis
+%
+\newif\ifdistinction
+\distinctionfalse
+
+%
+% All Senior Theses are type thesis regardless of the department
+%
+\type{thesis}
+
+\newcommand{\ucosafhmember}[1]{\def\baselinestretch{1}\large\normalsize 
+	\approval{#1}
+    \hangindent\wd 1  
+    Committee member from the Board of Senior Thesis Readers\par}
+\renewcommand{\member}[2]{\def\baselinestretch{1}\large\normalsize 
+	\approval{#1}
+    \hangindent\wd 1  
+	Committee member from the #2\par}
+\renewcommand{\chair}[1]{\def\baselinestretch{1}\large\normalsize 
+			   \approval{#1}
+			   \hangindent\wd 1  
+               \ifdistinction
+	           Chair of the University Committee on Student and Faculty
+               Honors\else
+               Director, University Honors Program\fi\par} 
+\renewcommand{\maketitlepage}{\newpage\thispagestyle{empty}
+	\begingroup \parskip 0pt
+    \vglue 1.0in plus 1.2fil minus .5in
+	\maketitlebox
+    \vskip .5in plus 1.8fil minus .25in
+	\makeauthorbox
+	\vskip .5in plus 2fil minus .5in
+
+    \parindent3.5em\pretolerance=10000
+    \def\baselinestretch{1}\large\normalsize 
+		A thesis submitted to the 
+		Faculty of the University of Delaware in partial fulfillment 
+		of the requirements for the degree of
+        \ifdistinction\else Honors\ \fi 
+        \@degree
+        \ifmajorfield\  in \@majorfield\fi
+        \ifdistinction\  with Distinction\fi\par
+    
+    \vskip .4in minus .25in
+    \centerline{\@degreedate}
+%
+% Copyright use to be optional (\copyrighttrue/false no longer valid)
+%
+	            \vskip .4in minus .25in
+			    \begin{center}
+                \def\baselinestretch{1}\large\normalsize 
+				\copyright\ \@copyrightyear
+			    \quad\@author\par%
+			    All Rights Reserved\par\end{center}
+    \endgroup}
+
+\renewenvironment{approvalpage}{\newpage\thispagestyle{empty}
+    \begingroup\parskip 0pt
+    \setbox1=\hbox{Approved:\enskip}
+    \vglue 1.0in plus 1.2fil minus .5in
+    \maketitlebox
+    \vskip .5in plus 1.5fil minus .25in % FIX
+    \makeauthorbox
+    \parindent\wd 1
+    \vskip .25in plus .5fil minus .25in}%
+    {\endgroup}
+\endinput
+%%
+%% End of file `seniorthesis.clo'.

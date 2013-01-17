@@ -1,0 +1,1510 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.5.13)  14 JAN 2013 21:52
+entering extended mode
+**lj_main.tex
+
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_mai
+n.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\udthes
+is.cls"
+Document Class: udthesis 2008/7/01 Standard UDThesis LaTeX class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+LaTeX Info: Redefining \rm on input line 51.
+LaTeX Info: Redefining \sf on input line 52.
+LaTeX Info: Redefining \tt on input line 53.
+LaTeX Info: Redefining \bf on input line 54.
+LaTeX Info: Redefining \it on input line 55.
+LaTeX Info: Redefining \sl on input line 56.
+LaTeX Info: Redefining \sc on input line 57.
+LaTeX Info: Redefining \cal on input line 58.
+LaTeX Info: Redefining \mit on input line 59.
+\titlebaselineskip=\skip43
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2011/12/04 v6.82m Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
+Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
+Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+)
+\@linkdim=\dimen103
+\Hy@linkcounter=\count88
+\Hy@pagecounter=\count89
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2011/12/04 v6.82m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count90
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 3925
+.
+Package hyperref Info: Option `linktocpage' set `true' on input line 3925.
+Package hyperref Info: Option `colorlinks' set `true' on input line 3925.
+Package hyperref Info: Hyper figures OFF on input line 4046.
+Package hyperref Info: Link nesting OFF on input line 4051.
+Package hyperref Info: Hyper index ON on input line 4054.
+Package hyperref Info: Plain pages OFF on input line 4061.
+Package hyperref Info: Backreferencing OFF on input line 4066.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4284.
+\c@Hy@tempcnt=\count91
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4637.
+\Fld@menulength=\count92
+\Field@Width=\dimen104
+\Fld@charsize=\dimen105
+Package hyperref Info: Hyper figures OFF on input line 5757.
+Package hyperref Info: Link nesting OFF on input line 5762.
+Package hyperref Info: Hyper index ON on input line 5765.
+Package hyperref Info: backreferencing OFF on input line 5772.
+Package hyperref Info: Link coloring ON on input line 5775.
+Package hyperref Info: Link coloring with OCG OFF on input line 5782.
+Package hyperref Info: PDF/A mode OFF on input line 5787.
+LaTeX Info: Redefining \ref on input line 5827.
+LaTeX Info: Redefining \pageref on input line 5831.
+\Hy@abspage=\count93
+\c@Item=\count94
+\c@Hfootnote=\count95
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2011/12/04 v6.82m Hyperref driver for pdfTeX
+\Fld@listcount=\count96
+\c@bookmark@seq@number=\count97
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip44
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count98
+))
+\Gin@req@height=\dimen106
+\Gin@req@width=\dimen107
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen108
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip45
+\LTright=\skip46
+\LTpre=\skip47
+\LTpost=\skip48
+\LTchunksize=\count99
+\LTcapwidth=\dimen109
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count100
+\LT@rows=\count101
+\c@LT@tables=\count102
+\c@LT@chunks=\count103
+\LT@p@ftn=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip49
+\subfigcapskip=\skip50
+\subfigcaptopadj=\dimen110
+\subfigbottomskip=\skip51
+\subfigcapmargin=\dimen111
+\subfiglabelskip=\skip52
+\c@subfigure=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@lotdepth=\count107
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip53
+\subfig@bottom=\skip54
+)
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_mai
+n.aux"
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_tap
+-dissertation.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_int
+ro.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_int
+ro_fig.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_the
+ory.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_oce
+an.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_oce
+an_fig.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_1.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_1_fig.aux"
+
+LaTeX Warning: Label `fig:sw45_fix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sw45_fix' multiply defined.
+
+
+LaTeX Warning: Label `fig:sw20_fix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sw20_fix' multiply defined.
+
+
+LaTeX Warning: Label `fig:sw54_fix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sw54_fix' multiply defined.
+
+)
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_2.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_2_fig.aux"
+
+LaTeX Warning: Label `fig:sw45_fix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sw45_fix' multiply defined.
+
+
+LaTeX Warning: Label `fig:sw20_fix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sw20_fix' multiply defined.
+
+
+LaTeX Warning: Label `fig:sw54_fix' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sw54_fix' multiply defined.
+
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+)
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ana
+lysis.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ana
+lysis_fig.aux"
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+
+LaTeX Warning: Label `fig:a2130' multiply defined.
+
+)
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_con
+clusion.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ref
+.aux"
+
+LaTeX Warning: Label `intro_apel_1995' multiply defined.
+
+))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+\AtBeginShipoutBox=\box30
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+Package hyperref Info: Link coloring ON on input line 19.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count108
+)
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
+
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_mai
+n.out")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_mai
+n.out")
+\@outlinefile=\write3
+ ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen112
+\scratchbox=\box31
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen113
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks17
+)
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_tap
+-dissertation.tex"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+
+[1
+
+
+{C:/Documents and Settings/All Users/Application Data/MiKTeX/2.9/pdftex/config/
+pdftex.map}] [2
+
+]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_mai
+n.toc"
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 1.
+ [3
+
+
+] [4])
+\tf@toc=\write4
+ [5] [6
+
+]
+
+Package hyperref Warning: bookmark level for unknown prefacesection defaults to
+ 0.
+
+
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_mai
+n.lof" [7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+[10])
+\tf@lof=\write5
+
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
+ [11]
+[12]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_abs
+.tex") [13
+
+] [14
+
+])
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_int
+ro.tex"
+Chapter 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 \begin{equation}
+                      [1
+
+
+
+
+]
+Overfull \hbox (10.9586pt too wide) in paragraph at lines 54--57
+\OT1/cmr/m/n/12 where $\OML/cmm/m/it/12 $ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/1
+2 D$ \OT1/cmr/m/n/12 are nondi-men-sional pa-ram-e-ters de-scrib-ing non-lin-ea
+r-ity and high-frequency
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 
+      [2]
+Underfull \vbox (badness 2837) has occurred while \output is active []
+
+ [3])
+[4]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_int
+ro_fig.tex" <./figure/experiment/IW.jpg, id=538, 357.335pt x 383.4325pt>
+File: ./figure/experiment/IW.jpg Graphic file (type jpg)
+
+<use ./figure/experiment/IW.jpg>
+Package pdftex.def Info: ./figure/experiment/IW.jpg used on input line 5.
+(pdftex.def)             Requested size: 352.67928pt x 378.45847pt.
+
+<./figure/theory/apel_solution.png, id=539, 449.68pt x 337.26pt>
+File: ./figure/theory/apel_solution.png Graphic file (type png)
+
+<use ./figure/theory/apel_solution.png>
+Package pdftex.def Info: ./figure/theory/apel_solution.png used on input line 1
+2.
+(pdftex.def)             Requested size: 352.67928pt x 264.5181pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [5
+
+
+ <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure
+/experiment/IW.jpg>] [6 <C:/Documents and Settings/cmsguest/My Documents/Resear
+ch/Thesis/sw06v2/figure/theory/apel_solution.png (PNG copy)>]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_the
+ory.tex"
+Chapter 2.
+[7
+
+
+
+] [8] [9] [10] [11] [12] [13]
+Missing character: There is no Þ in font cmr12!
+Missing character: There is no Þ in font cmr12!
+ [14] [15] [16]
+Missing character: There is no Ò in font cmr12!
+Missing character: There is no Ó in font cmr12!
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 311.
+
+[17]
+
+LaTeX Font Warning: Command \Large invalid in math mode on input line 361.
+
+[18] [19]
+
+LaTeX Warning: Reference `fig:tfarm_dir' on page 20 undefined on input line 408
+.
+
+
+LaTeX Warning: Reference `fig:tfarm' on page 20 undefined on input line 408.
+
+
+LaTeX Warning: Reference `fig:tfarm_dir' on page 20 undefined on input line 410
+.
+
+Missing character: There is no Ò in font cmr12!
+Missing character: There is no Ó in font cmr12!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+Missing character: There is no Ð in font cmr12!
+
+
+LaTeX Warning: Reference `fig:water_temp4' on page 21 undefined on input line 4
+45.
+
+[21]) [22]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_oce
+an.tex"
+Chapter 3.
+[23
+
+
+
+] [24] [25] [26] [27]) [28]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_oce
+an_fig.tex"
+<./figure/experiment/moorings_site.png, id=772, 524.71031pt x 471.26062pt>
+File: ./figure/experiment/moorings_site.png Graphic file (type png)
+
+<use ./figure/experiment/moorings_site.png>
+Package pdftex.def Info: ./figure/experiment/moorings_site.png used on input li
+ne 6.
+(pdftex.def)             Requested size: 440.84743pt x 395.9497pt.
+
+<./figure/experiment/sw32adcp_temp_1.png, id=774, 722.7pt x 542.025pt>
+File: ./figure/experiment/sw32adcp_temp_1.png Graphic file (type png)
+
+<use ./figure/experiment/sw32adcp_temp_1.png>
+Package pdftex.def Info: ./figure/experiment/sw32adcp_temp_1.png used on input 
+line 12.
+(pdftex.def)             Requested size: 440.84743pt x 330.63477pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./figure/experiment/RADARSAT.png, id=775, 182.6022pt x 205.7286pt>
+File: ./figure/experiment/RADARSAT.png Graphic file (type png)
+
+<use ./figure/experiment/RADARSAT.png>
+Package pdftex.def Info: ./figure/experiment/RADARSAT.png used on input line 19
+.
+(pdftex.def)             Requested size: 352.67928pt x 397.36133pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<./figure/experiment/sw54_aug17_thermocline_18C_long.png, id=776, 449.68pt x 33
+7.26pt>
+File: ./figure/experiment/sw54_aug17_thermocline_18C_long.png Graphic file (typ
+e png)
+ <use ./figure/experiment/sw54_aug17_thermocline_18C_long.png>
+Package pdftex.def Info: ./figure/experiment/sw54_aug17_thermocline_18C_long.pn
+g used on input line 33.
+(pdftex.def)             Requested size: 352.67928pt x 264.5181pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./figure/experiment/IW_dir.png, id=777, 449.68pt x 337.26pt>
+File: ./figure/experiment/IW_dir.png Graphic file (type png)
+
+<use ./figure/experiment/IW_dir.png>
+Package pdftex.def Info: ./figure/experiment/IW_dir.png used on input line 40.
+(pdftex.def)             Requested size: 352.67928pt x 264.5181pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<./figure/experiment/ship_track_radar_report.png, id=778, 722.7pt x 542.025pt>
+File: ./figure/experiment/ship_track_radar_report.png Graphic file (type png)
+
+<use ./figure/experiment/ship_track_radar_report.png>
+Package pdftex.def Info: ./figure/experiment/ship_track_radar_report.png used o
+n input line 48.
+(pdftex.def)             Requested size: 352.67928pt x 264.51111pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [29 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/f
+igure/experiment/moorings_site.png>] [30 <C:/Documents and Settings/cmsguest/My
+ Documents/Research/Thesis/sw06v2/figure/experiment/sw32adcp_temp_1.png>]
+[31 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/experiment/RADARSAT.png>] [32 <C:/Documents and Settings/cmsguest/My Docume
+nts/Research/Thesis/sw06v2/figure/experiment/sw54_aug17_thermocline_18C_long.pn
+g (PNG copy)>] [33 <C:/Documents and Settings/cmsguest/My Documents/Research/Th
+esis/sw06v2/figure/experiment/IW_dir.png (PNG copy)>] [34 <C:/Documents and Set
+tings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/experiment/ship_track
+_radar_report.png>]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_1.tex"
+Chapter 4.
+[35
+
+
+
+
+
+] [36] [37]) [38]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_1_fig.tex"
+<./figure/experiment/sw06_nrl300_single_ping.png, id=838, 421.575pt x 316.18124
+pt>
+File: ./figure/experiment/sw06_nrl300_single_ping.png Graphic file (type png)
+ <use ./figure/experiment/sw06_nrl300_single_ping.png>
+Package pdftex.def Info: ./figure/experiment/sw06_nrl300_single_ping.png used o
+n input line 7.
+(pdftex.def)             Requested size: 220.4237pt x 165.3222pt.
+
+<./figure/jasael/jasa_el_sw45_fig1_thesis.png, id=839, 659.46375pt x 250.68657p
+t>
+File: ./figure/jasael/jasa_el_sw45_fig1_thesis.png Graphic file (type png)
+ <use ./figure/jasael/jasa_el_sw45_fig1_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw45_fig1_thesis.png used on i
+nput line 28.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+<./figure/jasael/jasa_el_sw20_fig1_thesis.png, id=840, 659.46375pt x 250.68657p
+t>
+File: ./figure/jasael/jasa_el_sw20_fig1_thesis.png Graphic file (type png)
+ <use ./figure/jasael/jasa_el_sw20_fig1_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw20_fig1_thesis.png used on i
+nput line 31.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+<./figure/jasael/jasa_el_sw54_fig1_thesis.png, id=841, 659.46375pt x 250.68657p
+t>
+File: ./figure/jasael/jasa_el_sw54_fig1_thesis.png Graphic file (type png)
+ <use ./figure/jasael/jasa_el_sw54_fig1_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw54_fig1_thesis.png used on i
+nput line 34.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--35
+[][]
+ []
+
+
+<./figure/jasael/jasa_el_sw45_fig2_thesis.png, id=842, 659.46375pt x 250.68657p
+t>
+File: ./figure/jasael/jasa_el_sw45_fig2_thesis.png Graphic file (type png)
+ <use ./figure/jasael/jasa_el_sw45_fig2_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw45_fig2_thesis.png used on i
+nput line 43.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+<./figure/jasael/jasa_el_sw20_fig2_thesis.png, id=843, 659.46375pt x 250.68657p
+t>
+File: ./figure/jasael/jasa_el_sw20_fig2_thesis.png Graphic file (type png)
+ <use ./figure/jasael/jasa_el_sw20_fig2_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw20_fig2_thesis.png used on i
+nput line 46.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+<./figure/jasael/jasa_el_sw54_fig2_thesis.png, id=844, 659.46375pt x 250.68657p
+t>
+File: ./figure/jasael/jasa_el_sw54_fig2_thesis.png Graphic file (type png)
+ <use ./figure/jasael/jasa_el_sw54_fig2_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw54_fig2_thesis.png used on i
+nput line 49.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--50
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--50
+[][]
+ []
+
+
+<./figure/radar/sw06_Tempr_Depth30m_2006Aug17_203000_radar_curve_thesis1.png, i
+d=845, 534.798pt x 436.832pt>
+File: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_203000_radar_curve_thesis1.p
+ng Graphic file (type png)
+
+<use ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_203000_radar_curve_thesis1.pn
+g>
+Package pdftex.def Info: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_203000_ra
+dar_curve_thesis1.png used on input line 63.
+(pdftex.def)             Requested size: 440.84743pt x 360.09756pt.
+
+<./figure/experiment/nrl300_060817T2030_vla_hla_intens_geotime2.png, id=846, 51
+0.708pt x 638.385pt>
+File: ./figure/experiment/nrl300_060817T2030_vla_hla_intens_geotime2.png Graphi
+c file (type png)
+
+<use ./figure/experiment/nrl300_060817T2030_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/experiment/nrl300_060817T2030_vla_hla_intens_
+geotime2.png used on input line 69.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/mode/sw06_broadband_mf_nrl300_F1_6in1_thesis.png, id=847, 536.404pt x
+ 568.524pt>
+File: ./figure/mode/sw06_broadband_mf_nrl300_F1_6in1_thesis.png Graphic file (t
+ype png)
+ <use ./figure/mode/sw06_broadband_mf_nrl300_F1_6in1_thesis.png>
+Package pdftex.def Info: ./figure/mode/sw06_broadband_mf_nrl300_F1_6in1_thesis.
+png used on input line 75.
+(pdftex.def)             Requested size: 440.84743pt x 467.2684pt.
+
+<./figure/radar/Aug17_2100_t.png, id=848, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2100_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2100_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2100_t.png used on input line 85.
+
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/radar/sw06_Tempr_Depth30m_2006Aug17_210000_radar_curve_thesis1.png, i
+d=849, 534.798pt x 436.832pt>
+File: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_210000_radar_curve_thesis1.p
+ng Graphic file (type png)
+
+<use ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_210000_radar_curve_thesis1.pn
+g>
+Package pdftex.def Info: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_210000_ra
+dar_curve_thesis1.png used on input line 91.
+(pdftex.def)             Requested size: 440.84743pt x 360.09756pt.
+
+<./figure/experiment/nrl300_060817T2100_vla_hla_intens_geotime2.png, id=850, 51
+0.708pt x 638.385pt>
+File: ./figure/experiment/nrl300_060817T2100_vla_hla_intens_geotime2.png Graphi
+c file (type png)
+
+<use ./figure/experiment/nrl300_060817T2100_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/experiment/nrl300_060817T2100_vla_hla_intens_
+geotime2.png used on input line 97.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/mode/sw06_broadband_mf_nrl300_F2_6in1_thesis.png, id=851, 536.404pt x
+ 568.524pt>
+File: ./figure/mode/sw06_broadband_mf_nrl300_F2_6in1_thesis.png Graphic file (t
+ype png)
+ <use ./figure/mode/sw06_broadband_mf_nrl300_F2_6in1_thesis.png>
+Package pdftex.def Info: ./figure/mode/sw06_broadband_mf_nrl300_F2_6in1_thesis.
+png used on input line 103.
+(pdftex.def)             Requested size: 440.84743pt x 467.2684pt.
+
+<./figure/pe/mode_coupling/MC_17Aug06_210500_m_all.png, id=852, 562.35094pt x 3
+09.40594pt>
+File: ./figure/pe/mode_coupling/MC_17Aug06_210500_m_all.png Graphic file (type 
+png)
+ <use ./figure/pe/mode_coupling/MC_17Aug06_210500_m_all.png>
+Package pdftex.def Info: ./figure/pe/mode_coupling/MC_17Aug06_210500_m_all.png 
+used on input line 111.
+(pdftex.def)             Requested size: 440.84743pt x 242.55371pt.
+
+<./figure/radar/Aug17_2130_t.png, id=853, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2130_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2130_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2130_t.png used on input line 119
+.
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/radar/sw06_Tempr_Depth30m_2006Aug17_213000_radar_curve_thesis1.png, i
+d=854, 534.798pt x 436.832pt>
+File: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_213000_radar_curve_thesis1.p
+ng Graphic file (type png)
+
+<use ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_213000_radar_curve_thesis1.pn
+g>
+Package pdftex.def Info: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_213000_ra
+dar_curve_thesis1.png used on input line 125.
+(pdftex.def)             Requested size: 440.84743pt x 360.09756pt.
+
+<./figure/experiment/nrl300_060817T2130_vla_hla_intens_geotime2.png, id=855, 51
+0.708pt x 638.385pt>
+File: ./figure/experiment/nrl300_060817T2130_vla_hla_intens_geotime2.png Graphi
+c file (type png)
+
+<use ./figure/experiment/nrl300_060817T2130_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/experiment/nrl300_060817T2130_vla_hla_intens_
+geotime2.png used on input line 131.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/mode/sw06_broadband_mf_nrl300_F3_6in1_thesis.png, id=856, 536.404pt x
+ 568.524pt>
+File: ./figure/mode/sw06_broadband_mf_nrl300_F3_6in1_thesis.png Graphic file (t
+ype png)
+ <use ./figure/mode/sw06_broadband_mf_nrl300_F3_6in1_thesis.png>
+Package pdftex.def Info: ./figure/mode/sw06_broadband_mf_nrl300_F3_6in1_thesis.
+png used on input line 137.
+(pdftex.def)             Requested size: 440.84743pt x 467.2684pt.
+
+[39 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/experiment/sw06_nrl300_single_ping.png (PNG copy)>] [40 <C:/Documents and S
+ettings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/jasael/jasa_el_sw45
+_fig1_thesis.png (PNG copy)> <C:/Documents and Settings/cmsguest/My Documents/R
+esearch/Thesis/sw06v2/figure/jasael/jasa_el_sw20_fig1_thesis.png (PNG copy)> <C
+:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/ja
+sael/jasa_el_sw54_fig1_thesis.png (PNG copy)>] [41 <C:/Documents and Settings/c
+msguest/My Documents/Research/Thesis/sw06v2/figure/jasael/jasa_el_sw45_fig2_the
+sis.png (PNG copy)> <C:/Documents and Settings/cmsguest/My Documents/Research/T
+hesis/sw06v2/figure/jasael/jasa_el_sw20_fig2_thesis.png (PNG copy)> <C:/Documen
+ts and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/jasael/jasa
+_el_sw54_fig2_thesis.png (PNG copy)>] [42 <C:/Documents and Settings/cmsguest/M
+y Documents/Research/Thesis/sw06v2/figure/radar/sw06_Tempr_Depth30m_2006Aug17_2
+03000_radar_curve_thesis1.png (PNG copy)>] [43 <C:/Documents and Settings/cmsgu
+est/My Documents/Research/Thesis/sw06v2/figure/experiment/nrl300_060817T2030_vl
+a_hla_intens_geotime2.png (PNG copy)>] [44 <C:/Documents and Settings/cmsguest/
+My Documents/Research/Thesis/sw06v2/figure/mode/sw06_broadband_mf_nrl300_F1_6in
+1_thesis.png (PNG copy)>] [45 <C:/Documents and Settings/cmsguest/My Documents/
+Research/Thesis/sw06v2/figure/radar/Aug17_2100_t.png (PNG copy)>] [46 <C:/Docum
+ents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/radar/sw0
+6_Tempr_Depth30m_2006Aug17_210000_radar_curve_thesis1.png (PNG copy)>] [47 <C:/
+Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/expe
+riment/nrl300_060817T2100_vla_hla_intens_geotime2.png (PNG copy)>] [48 <C:/Docu
+ments and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/mode/sw0
+6_broadband_mf_nrl300_F2_6in1_thesis.png (PNG copy)>] [49 <C:/Documents and Set
+tings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/pe/mode_coupling/MC_1
+7Aug06_210500_m_all.png (PNG copy)>] [50 <C:/Documents and Settings/cmsguest/My
+ Documents/Research/Thesis/sw06v2/figure/radar/Aug17_2130_t.png (PNG copy)>]
+[51 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/radar/sw06_Tempr_Depth30m_2006Aug17_213000_radar_curve_thesis1.png (PNG cop
+y)>] [52 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v
+2/figure/experiment/nrl300_060817T2130_vla_hla_intens_geotime2.png (PNG copy)>]
+[53 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/mode/sw06_broadband_mf_nrl300_F3_6in1_thesis.png (PNG copy)>]
+<./figure/radar/Aug17_2200_t.png, id=926, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2200_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2200_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2200_t.png used on input line 146
+.
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/radar/sw06_Tempr_Depth30m_2006Aug17_220000_radar_curve_thesis1.png, i
+d=927, 534.798pt x 436.832pt>
+File: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_220000_radar_curve_thesis1.p
+ng Graphic file (type png)
+
+<use ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_220000_radar_curve_thesis1.pn
+g>
+Package pdftex.def Info: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_220000_ra
+dar_curve_thesis1.png used on input line 152.
+(pdftex.def)             Requested size: 440.84743pt x 360.09756pt.
+
+<./figure/experiment/nrl300_060817T2200_vla_hla_intens_geotime2.png, id=928, 51
+0.708pt x 638.385pt>
+File: ./figure/experiment/nrl300_060817T2200_vla_hla_intens_geotime2.png Graphi
+c file (type png)
+
+<use ./figure/experiment/nrl300_060817T2200_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/experiment/nrl300_060817T2200_vla_hla_intens_
+geotime2.png used on input line 158.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/mode/sw06_broadband_mf_nrl300_F4_6in1_thesis.png, id=929, 536.404pt x
+ 568.524pt>
+File: ./figure/mode/sw06_broadband_mf_nrl300_F4_6in1_thesis.png Graphic file (t
+ype png)
+ <use ./figure/mode/sw06_broadband_mf_nrl300_F4_6in1_thesis.png>
+Package pdftex.def Info: ./figure/mode/sw06_broadband_mf_nrl300_F4_6in1_thesis.
+png used on input line 164.
+(pdftex.def)             Requested size: 440.84743pt x 467.2684pt.
+
+<./figure/radar/Aug17_2230_t.png, id=930, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2230_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2230_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2230_t.png used on input line 173
+.
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/radar/sw06_Tempr_Depth30m_2006Aug17_223000_radar_curve_thesis1.png, i
+d=931, 534.798pt x 436.832pt>
+File: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_223000_radar_curve_thesis1.p
+ng Graphic file (type png)
+
+<use ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_223000_radar_curve_thesis1.pn
+g>
+Package pdftex.def Info: ./figure/radar/sw06_Tempr_Depth30m_2006Aug17_223000_ra
+dar_curve_thesis1.png used on input line 179.
+(pdftex.def)             Requested size: 440.84743pt x 360.09756pt.
+
+<./figure/experiment/nrl300_060817T2230_vla_hla_intens_geotime2.png, id=932, 51
+0.708pt x 638.385pt>
+File: ./figure/experiment/nrl300_060817T2230_vla_hla_intens_geotime2.png Graphi
+c file (type png)
+
+<use ./figure/experiment/nrl300_060817T2230_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/experiment/nrl300_060817T2230_vla_hla_intens_
+geotime2.png used on input line 185.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/mode/sw06_broadband_mf_nrl300_F5_6in1_thesis.png, id=933, 536.404pt x
+ 568.524pt>
+File: ./figure/mode/sw06_broadband_mf_nrl300_F5_6in1_thesis.png Graphic file (t
+ype png)
+ <use ./figure/mode/sw06_broadband_mf_nrl300_F5_6in1_thesis.png>
+Package pdftex.def Info: ./figure/mode/sw06_broadband_mf_nrl300_F5_6in1_thesis.
+png used on input line 191.
+(pdftex.def)             Requested size: 440.84743pt x 467.2684pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [54 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/f
+igure/radar/Aug17_2200_t.png (PNG copy)>] [55 <C:/Documents and Settings/cmsgue
+st/My Documents/Research/Thesis/sw06v2/figure/radar/sw06_Tempr_Depth30m_2006Aug
+17_220000_radar_curve_thesis1.png (PNG copy)>] [56 <C:/Documents and Settings/c
+msguest/My Documents/Research/Thesis/sw06v2/figure/experiment/nrl300_060817T220
+0_vla_hla_intens_geotime2.png (PNG copy)>] [57 <C:/Documents and Settings/cmsgu
+est/My Documents/Research/Thesis/sw06v2/figure/mode/sw06_broadband_mf_nrl300_F4
+_6in1_thesis.png (PNG copy)>] [58 <C:/Documents and Settings/cmsguest/My Docume
+nts/Research/Thesis/sw06v2/figure/radar/Aug17_2230_t.png (PNG copy)>] [59 <C:/D
+ocuments and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/radar
+/sw06_Tempr_Depth30m_2006Aug17_223000_radar_curve_thesis1.png (PNG copy)>]
+[60 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/experiment/nrl300_060817T2230_vla_hla_intens_geotime2.png (PNG copy)>]
+[61 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/mode/sw06_broadband_mf_nrl300_F5_6in1_thesis.png (PNG copy)>]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_2.tex" [62
+
+
+
+
+
+
+]) [63]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_2_fig.tex"
+<./figure/jasael/jasa_el_sw45_movingsource_thesis.png, id=975, 659.46375pt x 25
+0.68657pt>
+File: ./figure/jasael/jasa_el_sw45_movingsource_thesis.png Graphic file (type p
+ng)
+ <use ./figure/jasael/jasa_el_sw45_movingsource_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw45_movingsource_thesis.png u
+sed on input line 5.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+<./figure/jasael/jasa_el_sw20_movingsource_thesis.png, id=976, 659.46375pt x 25
+0.68657pt>
+File: ./figure/jasael/jasa_el_sw20_movingsource_thesis.png Graphic file (type p
+ng)
+ <use ./figure/jasael/jasa_el_sw20_movingsource_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw20_movingsource_thesis.png u
+sed on input line 8.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+<./figure/jasael/jasa_el_sw54_movingsource_thesis.png, id=977, 659.46375pt x 25
+0.68657pt>
+File: ./figure/jasael/jasa_el_sw54_movingsource_thesis.png Graphic file (type p
+ng)
+ <use ./figure/jasael/jasa_el_sw54_movingsource_thesis.png>
+Package pdftex.def Info: ./figure/jasael/jasa_el_sw54_movingsource_thesis.png u
+sed on input line 11.
+(pdftex.def)             Requested size: 352.67928pt x 134.06816pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--12
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--12
+[][]
+ []
+
+<./figure/radar/Aug17_2115_t.png, id=978, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2115_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2115_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2115_t.png used on input line 18.
+
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/shark/udel_060817T2115_vla_hla_intens_geotime2.png, id=979, 510.708pt
+ x 638.385pt>
+File: ./figure/shark/udel_060817T2115_vla_hla_intens_geotime2.png Graphic file 
+(type png)
+
+<use ./figure/shark/udel_060817T2115_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/shark/udel_060817T2115_vla_hla_intens_geotime
+2.png used on input line 30.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/radar/Aug17_2141_t.png, id=980, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2141_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2141_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2141_t.png used on input line 45.
+
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/shark/udel_060817T2141_vla_hla_intens_geotime2.png, id=981, 510.708pt
+ x 638.385pt>
+File: ./figure/shark/udel_060817T2141_vla_hla_intens_geotime2.png Graphic file 
+(type png)
+
+<use ./figure/shark/udel_060817T2141_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/shark/udel_060817T2141_vla_hla_intens_geotime
+2.png used on input line 57.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/radar/Aug17_2211_t.png, id=982, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2211_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2211_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2211_t.png used on input line 72.
+
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/shark/udel_060817T2211_vla_hla_intens_geotime2.png, id=983, 510.708pt
+ x 638.385pt>
+File: ./figure/shark/udel_060817T2211_vla_hla_intens_geotime2.png Graphic file 
+(type png)
+
+<use ./figure/shark/udel_060817T2211_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/shark/udel_060817T2211_vla_hla_intens_geotime
+2.png used on input line 84.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/radar/Aug17_2241_t.png, id=984, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2241_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2241_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2241_t.png used on input line 99.
+
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/shark/udel_060817T2241_vla_hla_intens_geotime2.png, id=985, 510.708pt
+ x 638.385pt>
+File: ./figure/shark/udel_060817T2241_vla_hla_intens_geotime2.png Graphic file 
+(type png)
+
+<use ./figure/shark/udel_060817T2241_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/shark/udel_060817T2241_vla_hla_intens_geotime
+2.png used on input line 111.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+
+<./figure/radar/Aug17_2311_t.png, id=986, 523.556pt x 486.618pt>
+File: ./figure/radar/Aug17_2311_t.png Graphic file (type png)
+
+<use ./figure/radar/Aug17_2311_t.png>
+Package pdftex.def Info: ./figure/radar/Aug17_2311_t.png used on input line 126
+.
+(pdftex.def)             Requested size: 440.84743pt x 409.75873pt.
+
+<./figure/shark/udel_060817T2311_vla_hla_intens_geotime2.png, id=987, 510.708pt
+ x 638.385pt>
+File: ./figure/shark/udel_060817T2311_vla_hla_intens_geotime2.png Graphic file 
+(type png)
+
+<use ./figure/shark/udel_060817T2311_vla_hla_intens_geotime2.png>
+Package pdftex.def Info: ./figure/shark/udel_060817T2311_vla_hla_intens_geotime
+2.png used on input line 138.
+(pdftex.def)             Requested size: 440.84743pt x 551.07521pt.
+ [64
+
+
+ <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure
+/jasael/jasa_el_sw45_movingsource_thesis.png (PNG copy)> <C:/Documents and Sett
+ings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/jasael/jasa_el_sw20_mo
+vingsource_thesis.png (PNG copy)> <C:/Documents and Settings/cmsguest/My Docume
+nts/Research/Thesis/sw06v2/figure/jasael/jasa_el_sw54_movingsource_thesis.png (
+PNG copy)>] [65 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesi
+s/sw06v2/figure/radar/Aug17_2115_t.png (PNG copy)>] [66 <C:/Documents and Setti
+ngs/cmsguest/My Documents/Research/Thesis/sw06v2/figure/shark/udel_060817T2115_
+vla_hla_intens_geotime2.png (PNG copy)>] [67 <C:/Documents and Settings/cmsgues
+t/My Documents/Research/Thesis/sw06v2/figure/radar/Aug17_2141_t.png (PNG copy)>
+] [68 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/f
+igure/shark/udel_060817T2141_vla_hla_intens_geotime2.png (PNG copy)>] [69 <C:/D
+ocuments and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/radar
+/Aug17_2211_t.png (PNG copy)>] [70 <C:/Documents and Settings/cmsguest/My Docum
+ents/Research/Thesis/sw06v2/figure/shark/udel_060817T2211_vla_hla_intens_geotim
+e2.png (PNG copy)>] [71 <C:/Documents and Settings/cmsguest/My Documents/Resear
+ch/Thesis/sw06v2/figure/radar/Aug17_2241_t.png (PNG copy)>] [72 <C:/Documents a
+nd Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/shark/udel_0608
+17T2241_vla_hla_intens_geotime2.png (PNG copy)>] [73 <C:/Documents and Settings
+/cmsguest/My Documents/Research/Thesis/sw06v2/figure/radar/Aug17_2311_t.png (PN
+G copy)>]
+[74 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/shark/udel_060817T2311_vla_hla_intens_geotime2.png (PNG copy)>]
+<./figure/shark/angular_distr_4.png, id=1037, 481.8pt x 524.96124pt>
+File: ./figure/shark/angular_distr_4.png Graphic file (type png)
+
+<use ./figure/shark/angular_distr_4.png>
+Package pdftex.def Info: ./figure/shark/angular_distr_4.png used on input line 
+149.
+(pdftex.def)             Requested size: 264.51114pt x 288.21692pt.
+) [75 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/f
+igure/shark/angular_distr_4.png>]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ana
+lysis.tex" [76
+
+
+
+
+]
+Chapter 5.
+
+LaTeX Warning: Reference `fig:jasa4' on page 77 undefined on input line 84.
+
+
+LaTeX Warning: Reference `fig:jasa4' on page 77 undefined on input line 87.
+
+
+LaTeX Warning: Reference `fig:jasa4' on page 77 undefined on input line 94.
+
+[77]
+
+LaTeX Warning: Reference `fig:jasa4' on page 78 undefined on input line 98.
+
+
+LaTeX Warning: Reference `fig:jasa4' on page 78 undefined on input line 102.
+
+
+LaTeX Warning: Reference `fig:jasa3' on page 78 undefined on input line 107.
+
+
+LaTeX Warning: Reference `fig:jasa3' on page 78 undefined on input line 107.
+
+
+LaTeX Warning: Reference `fig:jasa4' on page 78 undefined on input line 122.
+
+
+Underfull \vbox (badness 7064) has occurred while \output is active []
+
+ [78]
+Underfull \vbox (badness 5563) has occurred while \output is active []
+
+ [79]
+[80] [81]) [82]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ana
+lysis_fig.tex"
+<figure/beamforming/sw06_event50_PE_NRL300_17Aug06_213015_curved.png, id=1085, 
+1151.502pt x 244.915pt>
+File: figure/beamforming/sw06_event50_PE_NRL300_17Aug06_213015_curved.png Graph
+ic file (type png)
+
+<use figure/beamforming/sw06_event50_PE_NRL300_17Aug06_213015_curved.png>
+Package pdftex.def Info: figure/beamforming/sw06_event50_PE_NRL300_17Aug06_2130
+15_curved.png used on input line 7.
+(pdftex.def)             Requested size: 352.67928pt x 75.011pt.
+
+<figure/beamforming/sw06_event50_PE_NRL300_17Aug06_213345_curved.png, id=1086, 
+1151.502pt x 244.915pt>
+File: figure/beamforming/sw06_event50_PE_NRL300_17Aug06_213345_curved.png Graph
+ic file (type png)
+
+<use figure/beamforming/sw06_event50_PE_NRL300_17Aug06_213345_curved.png>
+Package pdftex.def Info: figure/beamforming/sw06_event50_PE_NRL300_17Aug06_2133
+45_curved.png used on input line 10.
+(pdftex.def)             Requested size: 352.67928pt x 75.011pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
+[][]
+ []
+
+
+<figure/beamforming/sw06_event50_PE_NRL300_17Aug06_220000_curved.png, id=1087, 
+1151.502pt x 244.915pt>
+File: figure/beamforming/sw06_event50_PE_NRL300_17Aug06_220000_curved.png Graph
+ic file (type png)
+
+<use figure/beamforming/sw06_event50_PE_NRL300_17Aug06_220000_curved.png>
+Package pdftex.def Info: figure/beamforming/sw06_event50_PE_NRL300_17Aug06_2200
+00_curved.png used on input line 20.
+(pdftex.def)             Requested size: 352.67928pt x 75.011pt.
+
+<figure/beamforming/sw06_event50_PE_NRL300_17Aug06_220335_curved.png, id=1088, 
+1151.502pt x 244.915pt>
+File: figure/beamforming/sw06_event50_PE_NRL300_17Aug06_220335_curved.png Graph
+ic file (type png)
+
+<use figure/beamforming/sw06_event50_PE_NRL300_17Aug06_220335_curved.png>
+Package pdftex.def Info: figure/beamforming/sw06_event50_PE_NRL300_17Aug06_2203
+35_curved.png used on input line 23.
+(pdftex.def)             Requested size: 352.67928pt x 75.011pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+[][]
+ []
+
+
+<figure/beamforming/sw06_nrl300_beamform_F3_ping019.png, id=1089, 421.575pt x 3
+16.18124pt>
+File: figure/beamforming/sw06_nrl300_beamform_F3_ping019.png Graphic file (type
+ png)
+ <use figure/beamforming/sw06_nrl300_beamform_F3_ping019.png>
+Package pdftex.def Info: figure/beamforming/sw06_nrl300_beamform_F3_ping019.png
+ used on input line 32.
+(pdftex.def)             Requested size: 220.4237pt x 165.3222pt.
+
+<figure/beamforming/sw06_nrl300_beamform_F3_ping031.png, id=1090, 421.575pt x 3
+16.18124pt>
+File: figure/beamforming/sw06_nrl300_beamform_F3_ping031.png Graphic file (type
+ png)
+ <use figure/beamforming/sw06_nrl300_beamform_F3_ping031.png>
+Package pdftex.def Info: figure/beamforming/sw06_nrl300_beamform_F3_ping031.png
+ used on input line 33.
+(pdftex.def)             Requested size: 220.4237pt x 165.3222pt.
+
+<figure/beamforming/sw06_nrl300_beamform_F4_ping010.png, id=1091, 421.575pt x 3
+16.18124pt>
+File: figure/beamforming/sw06_nrl300_beamform_F4_ping010.png Graphic file (type
+ png)
+ <use figure/beamforming/sw06_nrl300_beamform_F4_ping010.png>
+Package pdftex.def Info: figure/beamforming/sw06_nrl300_beamform_F4_ping010.png
+ used on input line 34.
+(pdftex.def)             Requested size: 220.4237pt x 165.3222pt.
+
+<figure/beamforming/sw06_nrl300_beamform_F4_ping041.png, id=1092, 421.575pt x 3
+16.18124pt>
+File: figure/beamforming/sw06_nrl300_beamform_F4_ping041.png Graphic file (type
+ png)
+ <use figure/beamforming/sw06_nrl300_beamform_F4_ping041.png>
+Package pdftex.def Info: figure/beamforming/sw06_nrl300_beamform_F4_ping041.png
+ used on input line 35.
+(pdftex.def)             Requested size: 220.4237pt x 165.3222pt.
+
+Overfull \hbox (19.99998pt too wide) in paragraph at lines 30--37
+ $[]$ 
+ []
+
+<./figure/pe/kraken_results.png, id=1093, 421.575pt x 316.18124pt>
+File: ./figure/pe/kraken_results.png Graphic file (type png)
+
+<use ./figure/pe/kraken_results.png>
+Package pdftex.def Info: ./figure/pe/kraken_results.png used on input line 44.
+(pdftex.def)             Requested size: 352.67928pt x 264.51456pt.
+
+<./figure/pe/mode_6in1_ll_paper_small.png, id=1094, 1011.78pt x 739.563pt>
+File: ./figure/pe/mode_6in1_ll_paper_small.png Graphic file (type png)
+
+<use ./figure/pe/mode_6in1_ll_paper_small.png>
+Package pdftex.def Info: ./figure/pe/mode_6in1_ll_paper_small.png used on input
+ line 51.
+(pdftex.def)             Requested size: 440.84743pt x 322.2377pt.
+
+<./figure/pe/MC_213000_m_all_copy.png, id=1095, 483.30562pt x 507.39563pt>
+File: ./figure/pe/MC_213000_m_all_copy.png Graphic file (type png)
+
+<use ./figure/pe/MC_213000_m_all_copy.png>
+Package pdftex.def Info: ./figure/pe/MC_213000_m_all_copy.png used on input lin
+e 57.
+(pdftex.def)             Requested size: 440.84743pt x 462.83789pt.
+
+<./figure/pe/sw06_event50_PE_NRL300_300Hz_17Aug06_213000_MC_m1_3_copy_small.png
+, id=1096, 435.12563pt x 414.79968pt>
+File: ./figure/pe/sw06_event50_PE_NRL300_300Hz_17Aug06_213000_MC_m1_3_copy_smal
+l.png Graphic file (type png)
+
+<use ./figure/pe/sw06_event50_PE_NRL300_300Hz_17Aug06_213000_MC_m1_3_copy_small
+.png>
+Package pdftex.def Info: ./figure/pe/sw06_event50_PE_NRL300_300Hz_17Aug06_21300
+0_MC_m1_3_copy_small.png used on input line 64.
+(pdftex.def)             Requested size: 440.84743pt x 420.27986pt.
+
+<./figure/pe/270_330_M1_3_213000_small.png, id=1097, 477.28313pt x 432.86719pt>
+File: ./figure/pe/270_330_M1_3_213000_small.png Graphic file (type png)
+<use ./figure/pe/270_330_M1_3_213000_small.png>
+Package pdftex.def Info: ./figure/pe/270_330_M1_3_213000_small.png used on inpu
+t line 71.
+(pdftex.def)             Requested size: 440.84743pt x 399.82123pt.
+
+<./figure/pe/moving_pe.jpg, id=1098, 905.3825pt x 330.23375pt>
+File: ./figure/pe/moving_pe.jpg Graphic file (type jpg)
+
+<use ./figure/pe/moving_pe.jpg>
+Package pdftex.def Info: ./figure/pe/moving_pe.jpg used on input line 79.
+(pdftex.def)             Requested size: 440.84743pt x 160.79303pt.
+
+<./figure/pe/M3_comparison.jpg, id=1099, 943.525pt x 424.58624pt>
+File: ./figure/pe/M3_comparison.jpg Graphic file (type jpg)
+
+<use ./figure/pe/M3_comparison.jpg>
+Package pdftex.def Info: ./figure/pe/M3_comparison.jpg used on input line 85.
+(pdftex.def)             Requested size: 440.84743pt x 198.38292pt.
+
+<./figure/shark/sw06_udel_pe_exp_comparison.png, id=1100, 888.31876pt x 382.428
+76pt>
+File: ./figure/shark/sw06_udel_pe_exp_comparison.png Graphic file (type png)
+ <use ./figure/shark/sw06_udel_pe_exp_comparison.png>
+Package pdftex.def Info: ./figure/shark/sw06_udel_pe_exp_comparison.png used on
+ input line 92.
+(pdftex.def)             Requested size: 440.84743pt x 189.78423pt.
+
+<figure/coherence/060817T2100_ch00_vla_time_correlation.png, id=1101, 421.575pt
+ x 316.18124pt>
+File: figure/coherence/060817T2100_ch00_vla_time_correlation.png Graphic file (
+type png)
+
+<use figure/coherence/060817T2100_ch00_vla_time_correlation.png>
+Package pdftex.def Info: figure/coherence/060817T2100_ch00_vla_time_correlation
+.png used on input line 98.
+(pdftex.def)             Requested size: 220.4237pt x 165.3222pt.
+
+<figure/coherence/060817T2130_ch00_vla_time_correlation.png, id=1102, 421.575pt
+ x 316.18124pt>
+File: figure/coherence/060817T2130_ch00_vla_time_correlation.png Graphic file (
+type png)
+
+<use figure/coherence/060817T2130_ch00_vla_time_correlation.png>
+Package pdftex.def Info: figure/coherence/060817T2130_ch00_vla_time_correlation
+.png used on input line 104.
+(pdftex.def)             Requested size: 220.4237pt x 165.3222pt.
+
+<figure/coherence/060817T2200_ch00_vla_time_correlation.png, id=1103, 421.575pt
+ x 316.18124pt>
+File: figure/coherence/060817T2200_ch00_vla_time_correlation.png Graphic file (
+type png)
+
+<use figure/coherence/060817T2200_ch00_vla_time_correlation.png>
+Package pdftex.def Info: figure/coherence/060817T2200_ch00_vla_time_correlation
+.png used on input line 110.
+(pdftex.def)             Requested size: 220.4237pt x 165.3222pt.
+) [83
+
+
+ <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure
+/beamforming/sw06_event50_PE_NRL300_17Aug06_213015_curved.png> <C:/Documents an
+d Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/beamforming/sw06
+_event50_PE_NRL300_17Aug06_213345_curved.png> <C:/Documents and Settings/cmsgue
+st/My Documents/Research/Thesis/sw06v2/figure/beamforming/sw06_event50_PE_NRL30
+0_17Aug06_220000_curved.png> <C:/Documents and Settings/cmsguest/My Documents/R
+esearch/Thesis/sw06v2/figure/beamforming/sw06_event50_PE_NRL300_17Aug06_220335_
+curved.png>] [84 <C:/Documents and Settings/cmsguest/My Documents/Research/Thes
+is/sw06v2/figure/beamforming/sw06_nrl300_beamform_F3_ping019.png (PNG copy)> <C
+:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/be
+amforming/sw06_nrl300_beamform_F3_ping031.png (PNG copy)> <C:/Documents and Set
+tings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/beamforming/sw06_nrl3
+00_beamform_F4_ping010.png (PNG copy)> <C:/Documents and Settings/cmsguest/My D
+ocuments/Research/Thesis/sw06v2/figure/beamforming/sw06_nrl300_beamform_F4_ping
+041.png (PNG copy)>] [85 <C:/Documents and Settings/cmsguest/My Documents/Resea
+rch/Thesis/sw06v2/figure/pe/kraken_results.png (PNG copy)>] [86 <C:/Documents a
+nd Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/pe/mode_6in1_ll
+_paper_small.png>] [87 <C:/Documents and Settings/cmsguest/My Documents/Researc
+h/Thesis/sw06v2/figure/pe/MC_213000_m_all_copy.png>] [88 <C:/Documents and Sett
+ings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/pe/sw06_event50_PE_NRL
+300_300Hz_17Aug06_213000_MC_m1_3_copy_small.png>] [89 <C:/Documents and Setting
+s/cmsguest/My Documents/Research/Thesis/sw06v2/figure/pe/270_330_M1_3_213000_sm
+all.png>]
+[90 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/pe/moving_pe.jpg> <C:/Documents and Settings/cmsguest/My Documents/Research
+/Thesis/sw06v2/figure/pe/M3_comparison.jpg>] [91 <C:/Documents and Settings/cms
+guest/My Documents/Research/Thesis/sw06v2/figure/shark/sw06_udel_pe_exp_compari
+son.png> <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v
+2/figure/coherence/060817T2100_ch00_vla_time_correlation.png (PNG copy)>]
+[92 <C:/Documents and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/fig
+ure/coherence/060817T2130_ch00_vla_time_correlation.png (PNG copy)> <C:/Documen
+ts and Settings/cmsguest/My Documents/Research/Thesis/sw06v2/figure/coherence/0
+60817T2200_ch00_vla_time_correlation.png (PNG copy)>]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_con
+clusion.tex"
+Chapter 6.
+) [93
+
+
+
+]
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ref
+.tex" [94
+
+
+
+]
+Bibliography.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\uppercase' on input line 4.
+
+Missing character: There is no Ò in font cmr12!
+Missing character: There is no Ó in font cmr12!
+Missing character: There is no Ò in font cmr12!
+Missing character: There is no Ó in font cmr12!
+Missing character: There is no Ð in font cmr12!
+Missing character: There is no Ò in font cmr12!
+Missing character: There is no Ó in font cmr12!
+Missing character: There is no Ò in font cmr12!
+Missing character: There is no Ó in font cmr12!
+Missing character: There is no Ò in font cmr12!
+Missing character: There is no Ó in font cmr12!
+Missing character: There is no Ð in font cmr12!
+Missing character: There is no Ò in font cmr12!
+Missing character: There is no Ó in font cmr12!
+Missing character: There is no Ð in font cmr12!
+[95pdfTeX warning (ext4): destination with the same identifier (name{cite.intro
+_apel_1995}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.24 \bibitem{intro_Lynch_2010}
+                               Lynch, J.F.; Ying-Tsong Lin; Duda, T.F.; Newh...
+]
+Missing character: There is no ¡ in font cmr12!
+Missing character: There is no ° in font cmr12!
+Missing character: There is no ¡ in font cmr12!
+Missing character: There is no ± in font cmr12!
+) [96]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_mai
+n.aux"
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_tap
+-dissertation.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_int
+ro.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_int
+ro_fig.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_the
+ory.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_oce
+an.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_oce
+an_fig.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_1.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_1_fig.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_2.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_sw0
+6_ev50_2_fig.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ana
+lysis.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ana
+lysis_fig.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_con
+clusion.aux")
+("C:\Documents and Settings\cmsguest\My Documents\Research\Thesis\sw06v2\lj_ref
+.aux"))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+Package rerunfilecheck Info: File `lj_main.out' has not changed.
+(rerunfilecheck)             Checksum: B00A305AA6EE922815CFAB982EF88E3D;5135.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6267 strings out of 494045
+ 109373 string characters out of 3148324
+ 183970 words of memory out of 3000000
+ 8972 multiletter control sequences out of 15000+200000
+ 8248 words of font info for 29 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 35i,12n,30p,1242b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on lj_main.pdf (110 pages, 4356955 bytes).
+PDF statistics:
+ 1296 PDF objects out of 1440 (max. 8388607)
+ 376 named destinations out of 1000 (max. 500000)
+ 837 words of extra memory for PDF output out of 10000 (max. 10000000)
+
